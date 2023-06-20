@@ -62,6 +62,12 @@ main>section>div>div:nth-child(2){
     right: 0;
 }
 
+.about_me>div{
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+}
+
 
 
 

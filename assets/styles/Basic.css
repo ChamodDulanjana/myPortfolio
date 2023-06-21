@@ -199,12 +199,14 @@ main > section > div > div:nth-child(2) {
     color: #4D6197;
 }
 
+/*---------------------------------------------# ABOUT ME SECTION #---------------------------------------------------*/
+
 #section_about_me {
     width: 100%;
     height: 930px;
     /*display: grid;*/
     /*grid-template-columns: 1fr 1fr;*/
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     /*position: relative;*/
 }
 
@@ -221,7 +223,7 @@ main > section > div > div:nth-child(2) {
 
 #h2_about_me {
     font-family: 'Pathway Extreme', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #868B8D;
     width: max-content;
     height: max-content;
@@ -240,50 +242,170 @@ main > section > div > div:nth-child(2) {
 }
 
 #section_about_me > div > div:nth-child(1) {
-    border: 2px solid green;
+    /*border: 2px solid green;*/
+    position: relative;
 }
 
 #section_about_me > div > div:nth-child(2) {
-    border: 2px solid blueviolet;
+    /*border: 2px solid blueviolet;*/
+    position: relative;
+    /*top: 20px;*/
+    bottom: 30px;
+    right: 100px;
+    margin: auto;
+}
+
+#about_me_img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    /*bottom: 90px;*/
+    margin: auto;
+    width: 390px;
+}
+
+#section_about_me > div > div:nth-child(2)>h2{
+    font-family: 'KoHo', sans-serif;
+    font-size: 35px;
+    margin-left: 13px;
+}
+
+#section_about_me > div > div:nth-child(2)>p{
+    font-family: 'Rambla', sans-serif;
+    color: #868B8D;
+    font-size: 21px;
+    margin: 13px;
+}
+
+#about_me_span{
+    color: #4D6197;
+    font-weight: bold;
+}
+
+#about_me_experience_container{
+    width: 400px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 2px solid red;*/
+    margin-left: -8px;
+    margin-top: 65px;
+
+}
+
+#about_me_experience_container>div{
+    /*border: 2px solid black;*/
+    font-family: 'KoHo', sans-serif;
+    font-size: 25px;
+    /*position: relative;*/
+}
+
+
+.about_me_experience_span{
+    font-size: 30px;
+    position: relative;
+    bottom: 5px;
+}
+
+#about_me_experience_container>div>h2{
+    /*position: absolute;*/
+    width: max-content;
+    height: max-content;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-bottom: 7px;
+}
+
+#about_me_experience_container>div>p{
+    color: #868B8D;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#download_cv{
+    color: white;
+    background-color: #273C75;
+    font-family: 'Inter', sans-serif;
+    border-radius: 7px;
+    border: 0;
+    width: 170px;
+    height: 50px;
+    margin-top: 65px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+#download_span{
+    font-size: 20px;
+    position: relative;
+    left: 7px;
+}
+
+
+/*---------------------------------------------# MY SERVICES SECTION #------------------------------------------------*/
+
+#section_my_services {
+    width: 100%;
+    height: 930px;
+    background-color: bisque;
 }
 
 
 
+/*---------------------------------------------# Skills SECTION #------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#my_services {
+#section_skills {
     width: 100%;
     height: 930px;
     background-color: #868B8D;
 }
+
+
+
+
+/*---------------------------------------------# Education SECTION #------------------------------------------------*/
+
+#section_education {
+    width: 100%;
+    height: 930px;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------------------Media Query------------------------------------*/
@@ -326,7 +448,92 @@ main > section > div > div:nth-child(2) {
         width: 150px;
         height: 30px;
     }
+
+/*-------------------------------------------------------------------------------------*/
+
+    #section_about_me{
+        height: 720px;
+    }
+
+    #h1_about_me {
+        font-size: 30px;
+    }
+
+    #h2_about_me {
+        font-size: 13px;
+        padding-bottom: 25px;
+    }
+
+    #section_about_me > div {
+        height: calc(710px - 88px);
+    }
+
+    #about_me_img{
+        width: 310px;
+    }
+
+    #section_about_me > div > div:nth-child(2) {
+        /*top: 20px;*/
+        bottom: 25px;
+        right: 65px;
+        /*left: 30px;*/
+    }
+
+    #section_about_me > div > div:nth-child(2)>h2{
+        font-size: 30px;
+    }
+
+    #section_about_me > div > div:nth-child(2)>p{
+        font-size: 18px;
+        margin: 11px;
+
+    }
+
+    #about_me_experience_container{
+        width: 350px;
+        height: 80px;
+        margin-left: -8px;
+        margin-top: 45px;
+    }
+
+    #about_me_experience_container>div{
+        font-size: 20px;
+    }
+
+    .about_me_experience_span{
+        font-size: 20px;
+    }
+
+
+    #about_me_experience_container>div>p{
+        font-size: 13px;
+    }
+
+    #download_cv{
+        margin-top: 45px;
+    }
+
+    #download_span{
+        font-size: 20px;
+        position: relative;
+        left: 7px;
+    }
+
+
 }
 
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    #h2_about_me {
+        padding-bottom: 45px;
+    }
+
+
+
+}
 
 

@@ -210,7 +210,7 @@ main > section > div > div:nth-child(2) {
     /*position: relative;*/
 }
 
-#h1_about_me {
+.section_topic_1 {
     font-family: 'Karla', sans-serif;
     font-size: 35px;
     width: max-content;
@@ -221,7 +221,7 @@ main > section > div > div:nth-child(2) {
 
 }
 
-#h2_about_me {
+.section_topic_2 {
     font-family: 'Pathway Extreme', sans-serif;
     font-size: 15px;
     color: #868B8D;
@@ -234,9 +234,9 @@ main > section > div > div:nth-child(2) {
     padding-bottom: 30px;
 }
 
-#section_about_me > div {
+#about_me_main_container {
     /*border: 2px solid red;*/
-    height: calc(930px - 101px);
+    height: calc(930px - 104px);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -255,7 +255,7 @@ main > section > div > div:nth-child(2) {
     margin: auto;
 }
 
-#about_me_img{
+#about_me_img {
     position: absolute;
     left: 0;
     right: 0;
@@ -265,25 +265,25 @@ main > section > div > div:nth-child(2) {
     width: 390px;
 }
 
-#section_about_me > div > div:nth-child(2)>h2{
+#section_about_me > div > div:nth-child(2) > h2 {
     font-family: 'KoHo', sans-serif;
     font-size: 35px;
     margin-left: 13px;
 }
 
-#section_about_me > div > div:nth-child(2)>p{
+#section_about_me > div > div:nth-child(2) > p {
     font-family: 'Rambla', sans-serif;
     color: #868B8D;
     font-size: 21px;
     margin: 13px;
 }
 
-#about_me_span{
+#about_me_span {
     color: #4D6197;
     font-weight: bold;
 }
 
-#about_me_experience_container{
+#about_me_experience_container {
     width: 400px;
     height: 100px;
     display: grid;
@@ -294,7 +294,7 @@ main > section > div > div:nth-child(2) {
 
 }
 
-#about_me_experience_container>div{
+#about_me_experience_container > div {
     /*border: 2px solid black;*/
     font-family: 'KoHo', sans-serif;
     font-size: 25px;
@@ -302,13 +302,13 @@ main > section > div > div:nth-child(2) {
 }
 
 
-.about_me_experience_span{
+.about_me_experience_span {
     font-size: 30px;
     position: relative;
     bottom: 5px;
 }
 
-#about_me_experience_container>div>h2{
+#about_me_experience_container > div > h2 {
     /*position: absolute;*/
     width: max-content;
     height: max-content;
@@ -319,7 +319,7 @@ main > section > div > div:nth-child(2) {
     padding-bottom: 7px;
 }
 
-#about_me_experience_container>div>p{
+#about_me_experience_container > div > p {
     color: #868B8D;
     font-family: 'Pathway Extreme', sans-serif;
     font-size: 15px;
@@ -334,7 +334,7 @@ main > section > div > div:nth-child(2) {
     padding-bottom: 2px;
 }
 
-#download_cv{
+#download_cv {
     color: white;
     background-color: #273C75;
     font-family: 'Inter', sans-serif;
@@ -347,7 +347,7 @@ main > section > div > div:nth-child(2) {
     cursor: pointer;
 }
 
-#download_span{
+#download_span {
     font-size: 20px;
     position: relative;
     left: 7px;
@@ -359,28 +359,43 @@ main > section > div > div:nth-child(2) {
 #section_my_services {
     width: 100%;
     height: 930px;
-    background-color: bisque;
+    /*background-color: bisque;*/
 }
 
-#my_services_main_container{
-    /*background-color: cyan;*/
+#my_services_main_container {
+    /*border: 2px solid red;*/
+    height: calc(930px - 104px);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+
 }
 
+#my_services_main_container > div {
+    /*border: 2px solid black;*/
+    width: 380px;
+    height: 500px;
+    margin: 50px;
+    margin-bottom: 110px;
+    box-shadow: 0 0 3px 0;
+
+}
+
+#my_services_main_container > div:nth-child(1) {
 
 
+}
+
+#my_services_main_container > div:nth-child(2) {
 
 
+}
+
+#my_services_main_container > div:nth-child(3) {
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -409,11 +424,9 @@ main > section > div > div:nth-child(2) {
     background-color: #868B8D;
 }
 
-#skills_main_container{
+#skills_main_container {
     background-color: cyan;
 }
-
-
 
 
 /*---------------------------------------------# Education SECTION #------------------------------------------------*/
@@ -425,43 +438,9 @@ main > section > div > div:nth-child(2) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
-
-
 
 
 @media screen and (max-width: 1485px) {
@@ -503,26 +482,25 @@ main > section > div > div:nth-child(2) {
         height: 30px;
     }
 
-/*-------------------------------------------------------------------------------------*/
-
-    #section_about_me{
+    /*-------------------------------------------------------------------------------------*/
+    #section_about_me {
         height: 720px;
     }
 
-    #h1_about_me {
+    .section_topic_1 {
         font-size: 30px;
     }
 
-    #h2_about_me {
+    .section_topic_2 {
         font-size: 13px;
         padding-bottom: 25px;
     }
 
-    #section_about_me > div {
+    #about_me_main_container {
         height: calc(710px - 88px);
     }
 
-    #about_me_img{
+    #about_me_img {
         width: 310px;
     }
 
@@ -533,41 +511,41 @@ main > section > div > div:nth-child(2) {
         /*left: 30px;*/
     }
 
-    #section_about_me > div > div:nth-child(2)>h2{
+    #section_about_me > div > div:nth-child(2) > h2 {
         font-size: 30px;
     }
 
-    #section_about_me > div > div:nth-child(2)>p{
+    #section_about_me > div > div:nth-child(2) > p {
         font-size: 18px;
         margin: 11px;
 
     }
 
-    #about_me_experience_container{
+    #about_me_experience_container {
         width: 350px;
         height: 80px;
         margin-left: -8px;
         margin-top: 45px;
     }
 
-    #about_me_experience_container>div{
+    #about_me_experience_container > div {
         font-size: 20px;
     }
 
-    .about_me_experience_span{
+    .about_me_experience_span {
         font-size: 20px;
     }
 
 
-    #about_me_experience_container>div>p{
+    #about_me_experience_container > div > p {
         font-size: 13px;
     }
 
-    #download_cv{
+    #download_cv {
         margin-top: 45px;
     }
 
-    #download_span{
+    #download_span {
         font-size: 20px;
         position: relative;
         left: 7px;
@@ -577,15 +555,11 @@ main > section > div > div:nth-child(2) {
 }
 
 
-
-
-
 @media screen and (max-width: 1024px) {
 
     #h2_about_me {
         padding-bottom: 45px;
     }
-
 
 
 }

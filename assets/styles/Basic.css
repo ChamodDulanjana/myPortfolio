@@ -375,10 +375,10 @@ main > section > div > div:nth-child(2) {
 
 #my_services_main_container > div {
     /*border: 2px solid black;*/
-    width: 380px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     margin: 50px;
-    margin-bottom: 110px;
+    margin-bottom: 130px;
     box-shadow: 0 0 3px 0;
 
 }
@@ -388,7 +388,7 @@ main > section > div > div:nth-child(2) {
     width: max-content;
     height: max-content;
     position: relative;
-    top: 250px;
+    top: 230px;
     left: 40px;
     padding-bottom: 7px;
     margin: 0;
@@ -402,14 +402,14 @@ main > section > div > div:nth-child(2) {
     color: #4D6197;
     position: relative;
     left: 40px;
-    top: 280px;
+    top: 260px;
 }
 
 #my_services_main_container > div > img{
     width: 37px;
     position: relative;
     left: 40px;
-    top: 230px;
+    top: 210px;
 }
 
 #my_services_main_container > div:nth-child(1) {
@@ -420,21 +420,6 @@ main > section > div > div:nth-child(2) {
 
 #my_services_main_container > div:nth-child(3) {
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -466,6 +451,11 @@ main > section > div > div:nth-child(2) {
     grid-template-rows: 1fr 1fr;
 }
 
+#skills_main_container > div{
+    border: 2px solid black;
+
+}
+
 
 
 
@@ -494,130 +484,11 @@ main > section > div > div:nth-child(2) {
 }
 
 
-/*--------------------------------------------------Media Query-------------------------------------------------------*/
-/*--------------------------------------------------Media Query-------------------------------------------------------*/
-/*--------------------------------------------------Media Query-------------------------------------------------------*/
 
 
-@media screen and (max-width: 1485px) {
-
-    main {
-        height: 630px;
-    }
-
-    #main_img {
-        width: 360px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(1) {
-        font-size: 25px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(2) {
-        font-size: 40px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(3) {
-        font-size: 18px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(4) {
-        font-size: 15px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(5) {
-        font-size: 15px;
-    }
-
-    main > div:nth-child(1) > p:nth-child(6) {
-        font-size: 15px;
-    }
-
-    .icons {
-        width: 150px;
-        height: 30px;
-    }
-
-    /*-------------------------------------------------------------------------------------*/
-    #section_about_me {
-        height: 720px;
-    }
-
-    .section_topic_1 {
-        font-size: 30px;
-    }
-
-    .section_topic_2 {
-        font-size: 13px;
-        padding-bottom: 25px;
-    }
-
-    #about_me_main_container {
-        height: calc(710px - 88px);
-    }
-
-    #about_me_img {
-        width: 310px;
-    }
-
-    #section_about_me > div > div:nth-child(2) {
-        /*top: 20px;*/
-        bottom: 25px;
-        right: 65px;
-        /*left: 30px;*/
-    }
-
-    #section_about_me > div > div:nth-child(2) > h2 {
-        font-size: 30px;
-    }
-
-    #section_about_me > div > div:nth-child(2) > p {
-        font-size: 18px;
-        margin: 11px;
-
-    }
-
-    #about_me_experience_container {
-        width: 350px;
-        height: 80px;
-        margin-left: -8px;
-        margin-top: 45px;
-    }
-
-    #about_me_experience_container > div {
-        font-size: 20px;
-    }
-
-    .about_me_experience_span {
-        font-size: 20px;
-    }
 
 
-    #about_me_experience_container > div > p {
-        font-size: 13px;
-    }
-
-    #download_cv {
-        margin-top: 45px;
-    }
-
-    #download_span {
-        font-size: 20px;
-        position: relative;
-        left: 7px;
-    }
 
 
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    #h2_about_me {
-        padding-bottom: 45px;
-    }
-
-
-}
 
 

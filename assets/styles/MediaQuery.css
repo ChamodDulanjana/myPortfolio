@@ -1,0 +1,212 @@
+
+
+
+/*--------------------------------------------------Media Query-------------------------------------------------------*/
+/* ################################################################################################################## */
+
+
+@media screen and (max-width: 1485px) {
+
+    main {
+        height: 630px;
+    }
+
+    #main_img {
+        width: 360px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(2) {
+        font-size: 40px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(4) {
+        font-size: 15px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(5) {
+        font-size: 15px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(6) {
+        font-size: 15px;
+    }
+
+    .icons {
+        width: 150px;
+        height: 30px;
+    }
+
+
+    /*-------------------------------------------# ABOUT ME SECTION #-------------------------------------------------*/
+
+
+
+    #section_about_me {
+        height: 720px;
+    }
+
+    .section_topic_1 {
+        font-size: 30px;
+    }
+
+    .section_topic_2 {
+        font-size: 13px;
+        padding-bottom: 25px;
+    }
+
+    #about_me_main_container {
+        height: calc(710px - 88px);
+    }
+
+    #about_me_img {
+        width: 310px;
+    }
+
+    #section_about_me > div > div:nth-child(2) {
+        /*top: 20px;*/
+        bottom: 25px;
+        right: 65px;
+        /*left: 30px;*/
+    }
+
+    #section_about_me > div > div:nth-child(2) > h2 {
+        font-size: 30px;
+    }
+
+    #section_about_me > div > div:nth-child(2) > p {
+        font-size: 18px;
+        margin: 11px;
+
+    }
+
+    #about_me_experience_container {
+        width: 350px;
+        height: 80px;
+        margin-left: -8px;
+        margin-top: 45px;
+    }
+
+    #about_me_experience_container > div {
+        font-size: 20px;
+    }
+
+    .about_me_experience_span {
+        font-size: 20px;
+    }
+
+
+    #about_me_experience_container > div > p {
+        font-size: 13px;
+    }
+
+    #download_cv {
+        margin-top: 45px;
+    }
+
+    #download_span {
+        font-size: 20px;
+        position: relative;
+        left: 7px;
+    }
+
+
+    /*-------------------------------------------# MY SERVICES SECTION #----------------------------------------------*/
+
+
+
+    #section_my_services{
+        height: 720px;
+    }
+
+    .section_topic_1 {
+        font-size: 30px;
+    }
+
+    .section_topic_2 {
+        font-size: 13px;
+        padding-bottom: 25px;
+    }
+
+    #my_services_main_container{
+        height: calc(710px - 88px);
+    }
+
+    #my_services_main_container > div {
+        width: 300px;
+        height: 400px;
+        margin: 30px;
+        margin-bottom: 100px;
+        box-shadow: 0 0 3px 0;
+
+    }
+
+    #my_services_main_container > div > h2{
+        font-size: 20px;
+        top: 200px;
+        left: 35px;
+        padding-bottom: 7px;
+        margin: 0;
+    }
+
+    #my_services_main_container > div > p{
+        font-size: 13px;
+        left: 35px;
+        top: 220px;
+    }
+
+    #my_services_main_container > div > img{
+        width: 32px;
+        left: 35px;
+        top: 185px;
+    }
+
+
+    /*---------------------------------------------# SKILLS SECTION #-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    #h2_about_me {
+        padding-bottom: 45px;
+    }
+
+
+}
+

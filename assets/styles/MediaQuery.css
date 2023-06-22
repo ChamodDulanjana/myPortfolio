@@ -247,8 +247,31 @@
 
 
 
+    /*---------------------------------------------# EDUCATION SECTION #-------------------------------------------------*/
 
 
+
+    #section_education {
+        height: 720px;
+    }
+
+    #education_main_container{
+        height: calc(710px - 88px);
+    }
+
+
+
+    /*---------------------------------------------# PORTFOLIO SECTION #-------------------------------------------------*/
+
+
+
+    #section_portfolio {
+        height: 720px;
+    }
+
+    #portfolio_main_container{
+        height: calc(710px - 88px);
+    }
 
 
 

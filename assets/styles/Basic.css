@@ -423,20 +423,8 @@ main > section > div > div:nth-child(2) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------------# Skills SECTION #------------------------------------------------*/
+
 
 #section_skills {
     width: 100%;
@@ -543,8 +531,6 @@ main > section > div > div:nth-child(2) {
 
 
 
-
-
 /*---------------------------------------------# Education SECTION #------------------------------------------------*/
 
 #section_education {
@@ -553,6 +539,45 @@ main > section > div > div:nth-child(2) {
     background-color: aliceblue;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------# PORTFOLIO SECTION #------------------------------------------------*/
+
+#section_portfolio {
+    width: 100%;
+    height: 930px;
+    background-color: bisque;
+}
+
+
+/*---------------------------------------------# CONTACT ME SECTION #------------------------------------------------*/
+
+/*#section_contact_me {*/
+/*    width: 100%;*/
+/*    height: 930px;*/
+/*    background-color: aliceblue;*/
+/*}*/
 
 
 

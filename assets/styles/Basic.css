@@ -356,6 +356,7 @@ main > section > div > div:nth-child(2) {
 
 /*---------------------------------------------# MY SERVICES SECTION #------------------------------------------------*/
 
+
 #section_my_services {
     width: 100%;
     height: 930px;
@@ -382,20 +383,53 @@ main > section > div > div:nth-child(2) {
 
 }
 
+#my_services_main_container > div > h2{
+    font-family: 'Inter', sans-serif;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    top: 250px;
+    left: 40px;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
+#my_services_main_container > div > p{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    width: max-content;
+    height: max-content;
+    color: #4D6197;
+    position: relative;
+    left: 40px;
+    top: 280px;
+}
+
+#my_services_main_container > div > img{
+    width: 37px;
+    position: relative;
+    left: 40px;
+    top: 230px;
+}
+
 #my_services_main_container > div:nth-child(1) {
-
-
 }
 
 #my_services_main_container > div:nth-child(2) {
-
-
 }
 
 #my_services_main_container > div:nth-child(3) {
-
-
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -421,12 +455,34 @@ main > section > div > div:nth-child(2) {
 #section_skills {
     width: 100%;
     height: 930px;
-    background-color: #868B8D;
+    background-color: bisque;
 }
 
 #skills_main_container {
-    background-color: cyan;
+    border: 2px solid red;
+    height: calc(930px - 104px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*---------------------------------------------# Education SECTION #------------------------------------------------*/

@@ -673,22 +673,57 @@ main > section > div > div:nth-child(2) {
 }
 
 #portfolio_main_container > div >div{
-    width: 2400px;
+    width: 3200px;
     height: 300px;
     border: 2px solid red;
+    display: flex;
+
+    animation-name: slides;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+@keyframes slides {
+    0%, 20%{
+        transform: translateX(-0%);
+    }
+    25%, 45%{
+        transform: translateX(-25%);
+    }
+    50%, 70%{
+        transform: translateX(-50%);
+    }
+    75%, 100%{
+        transform: translateX(-75%);
+    }
+    /*100%{*/
+    /*    transform: translateX(-100%);*/
+    /*}*/
 
+}
 
+.portfolio_slide_divs{
+    width: 800px;
+    height: 300px;
+    border: 2px solid green;
+}
 
+.portfolio_slide_divs:nth-child(1){
+    /*background-color: #BEC9E2;*/
+}
 
+.portfolio_slide_divs:nth-child(2){
+    /*background-color: aquamarine;*/
+}
 
+.portfolio_slide_divs:nth-child(3){
+    /*background-color: azure;*/
+}
 
-
-
-
-
-
+.portfolio_slide_divs:nth-child(4){
+    /*background-color: #BEC9E2;*/
+}
 
 
 

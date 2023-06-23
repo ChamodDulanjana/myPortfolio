@@ -259,6 +259,132 @@
         height: calc(710px - 88px);
     }
 
+    #education_main_container > div:nth-child(1){
+        width: 360px;
+    }
+
+    .section_education_div_dot{
+        width: 16px;
+        height: 16px;
+        background-color: #273C75;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    #education_main_container > div > div:nth-child(1){
+        left: -1px;
+        /*right: 0;*/
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #education_main_container > div >  div:nth-child(2){
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #education_main_container >  div > div:nth-child(3){
+        right: -1px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .section_education_base_div{
+        width: 280px;
+        height: 100px;
+        background-color: #BEC9E2;
+        border-radius: 8px;
+        box-shadow: 1px 1px 1px gray;
+        transform: rotate(270deg);
+    }
+
+    #education_main_container >  div > div:nth-child(4){
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 150px;
+        /*bottom: 0;*/
+        margin: auto;
+    }
+
+    #education_main_container >  div > div:nth-child(5){
+        position: absolute;
+        left: 220px;
+        /*right: 0;*/
+        /*top: 0;*/
+        bottom: 150px;
+        margin: auto;
+    }
+
+    #education_main_container >  div > div:nth-child(6){
+        position: absolute;
+        /*left: 0;*/
+        right: 220px;
+        /*top: 0;*/
+        bottom: 150px;
+        margin: auto;
+    }
+
+    .section_education_h2{
+        font-family: 'Inter', sans-serif;
+        font-size: 21px;
+        width: max-content;
+        height: max-content;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 24px;
+        margin: auto;
+    }
+
+    .section_education_p{
+        font-family: 'Pathway Extreme', sans-serif;
+        font-size: 14px;
+        color: #868B8D;
+        width: max-content;
+        height: max-content;
+        position: relative;
+        top: 34px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-weight: bolder;
+
+    }
+
+    .section_education_shape{
+        width: 180px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*---------------------------------------------# PORTFOLIO SECTION #-------------------------------------------------*/

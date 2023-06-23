@@ -544,12 +544,15 @@ main > section > div > div:nth-child(2) {
     transform: rotate(90deg);
 }
 
-#education_main_container > div > div:nth-child(1){
+.section_education_div_dot{
     width: 18px;
     height: 18px;
     background-color: #273C75;
     border-radius: 10px;
     position: absolute;
+}
+
+#education_main_container > div > div:nth-child(1){
     left: -1px;
     /*right: 0;*/
     top: 0;
@@ -558,11 +561,6 @@ main > section > div > div:nth-child(2) {
 }
 
 #education_main_container > div >  div:nth-child(2){
-    width: 18px;
-    height: 18px;
-    background-color: #273C75;
-    border-radius: 10px;
-    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -571,41 +569,31 @@ main > section > div > div:nth-child(2) {
 }
 
 #education_main_container >  div > div:nth-child(3){
-    width: 18px;
-    height: 18px;
-    background-color: #273C75;
-    border-radius: 10px;
-    position: absolute;
     right: -1px;
     top: 0;
     bottom: 0;
     margin: auto;
 }
 
-#education_main_container >  div > div:nth-child(4){
+.section_education_base_div{
     width: 300px;
     height: 110px;
     background-color: #BEC9E2;
     border-radius: 10px;
     box-shadow: 1px 1px 1px gray;
     transform: rotate(270deg);
+}
 
+#education_main_container >  div > div:nth-child(4){
     position: absolute;
     left: 0;
     right: 0;
-    top: 150px;
+    top: 160px;
     /*bottom: 0;*/
     margin: auto;
 }
 
 #education_main_container >  div > div:nth-child(5){
-    width: 300px;
-    height: 110px;
-    background-color: #BEC9E2;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px gray;
-    transform: rotate(270deg);
-
     position: absolute;
     left: 250px;
     /*right: 0;*/
@@ -615,18 +603,11 @@ main > section > div > div:nth-child(2) {
 }
 
 #education_main_container >  div > div:nth-child(6){
-    width: 300px;
-    height: 110px;
-    background-color: #BEC9E2;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px gray;
-    transform: rotate(270deg);
-
     position: absolute;
     /*left: 0;*/
     right: 250px;
     /*top: 0;*/
-    bottom: 150px;
+    bottom: 160px;
     margin: auto;
 }
 

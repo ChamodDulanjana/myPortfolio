@@ -667,7 +667,7 @@ main > section > div > div:nth-child(2) {
     position: absolute;
     top: 0;
     bottom: 50px;
-    left: 0;
+    left: 50px;
     right: 0;
     margin: auto;
     overflow: hidden;
@@ -676,7 +676,7 @@ main > section > div > div:nth-child(2) {
 #portfolio_main_container > div >div{
     width: 3200px;
     height: 300px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     display: flex;
 
     animation-name: slides;
@@ -704,7 +704,7 @@ main > section > div > div:nth-child(2) {
 .portfolio_slide_divs{
     width: 800px;
     height: 300px;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -728,12 +728,12 @@ main > section > div > div:nth-child(2) {
 
 }
 
-.portfolio_slide_divs:nth-child(1) > div:nth-child(1){
+.portfolio_slide_divs > div:nth-child(1){
     /*border: 2px solid blue;*/
     position: relative;
 }
 
-.portfolio_slide_divs:nth-child(1) > div:nth-child(2){
+.portfolio_slide_divs > div:nth-child(2){
     /*border: 2px solid blue;*/
 
 }
@@ -744,7 +744,7 @@ main > section > div > div:nth-child(2) {
     width: max-content;
     height: max-content;
     position: relative;
-    left: 35px;
+    left: 45px;
     /*right: 10px;*/
     top: 60px;
     margin-bottom: 0px;
@@ -758,7 +758,7 @@ main > section > div > div:nth-child(2) {
     height: max-content;
     position: relative;
     top: 72px;
-    left: 35px;
+    left: 45px;
     margin-top: 0;
     margin-bottom: 5px;
     /*right: 30px;*/
@@ -766,7 +766,7 @@ main > section > div > div:nth-child(2) {
     /*font-weight: bold;*/
 }
 
-#open_via_github{
+.github_btn{
     color: white;
     background-color: #273C75;
     font-family: 'Inter', sans-serif;
@@ -776,9 +776,23 @@ main > section > div > div:nth-child(2) {
     width: 150px;
     height: 48px;
     position: relative;
-    left: 35px;
+    left: 45px;
     top: 96px;
     cursor: pointer;
+}
+
+#portfolio_left_arrow{
+    width: 60px;
+    position: relative;
+    top: 250px;
+    left: 250px;
+}
+
+#portfolio_right_arrow{
+    width: 60px;
+    position: relative;
+    top: 250px;
+    left: 1100px;
 }
 
 .portfolio_slide_divs:nth-child(2){
@@ -786,7 +800,7 @@ main > section > div > div:nth-child(2) {
 }
 
 .portfolio_slide_divs:nth-child(3){
-    /*background-color: azure;*/
+    /*background-color: #868B8D;*/
 }
 
 .portfolio_slide_divs:nth-child(4){

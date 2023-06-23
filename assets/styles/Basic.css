@@ -651,7 +651,7 @@ main > section > div > div:nth-child(2) {
 #section_portfolio {
     width: 100%;
     height: 930px;
-    background-color: bisque;
+    /*background-color: bisque;*/
 }
 
 #portfolio_main_container{
@@ -679,7 +679,7 @@ main > section > div > div:nth-child(2) {
     display: flex;
 
     animation-name: slides;
-    animation-duration: 8s;
+    /*animation-duration: 8s;*/
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -697,9 +697,6 @@ main > section > div > div:nth-child(2) {
     75%, 100%{
         transform: translateX(-75%);
     }
-    /*100%{*/
-    /*    transform: translateX(-100%);*/
-    /*}*/
 
 }
 
@@ -707,10 +704,77 @@ main > section > div > div:nth-child(2) {
     width: 800px;
     height: 300px;
     border: 2px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio_slides_picture{
+    width: 366px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
 
 .portfolio_slide_divs:nth-child(1){
     /*background-color: #BEC9E2;*/
+
+
+}
+
+.portfolio_slide_divs:nth-child(1) > div:nth-child(1){
+    border: 2px solid blue;
+    position: relative;
+}
+
+.portfolio_slide_divs:nth-child(1) > div:nth-child(2){
+    border: 2px solid blue;
+
+}
+
+.section_portfolio_h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 20px;
+    /*right: 10px;*/
+    top: 65px;
+    margin-bottom: 0px;
+}
+
+.section_portfolio_p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #868B8D;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    top: 80px;
+    left: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    /*right: 30px;*/
+    /*margin: auto;*/
+    /*font-weight: bold;*/
+}
+
+#open_via_github{
+    color: white;
+    background-color: #273C75;
+    font-family: 'Inter', sans-serif;
+    border-radius: 7px;
+    border: 0;
+    width: 155px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 100px;
+    cursor: pointer;
 }
 
 .portfolio_slide_divs:nth-child(2){

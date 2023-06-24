@@ -201,13 +201,13 @@ main > section > div > div:nth-child(2) {
 
 /*---------------------------------------------# ABOUT ME SECTION #---------------------------------------------------*/
 
-#section_about_me {
+/*#section_about_me {
     width: 100%;
     height: 930px;
-    /*display: grid;*/
-    /*grid-template-columns: 1fr 1fr;*/
-    /*background-color: antiquewhite;*/
-    /*position: relative;*/
+    !*display: grid;*!
+    !*grid-template-columns: 1fr 1fr;*!
+    !*background-color: antiquewhite;*!
+    !*position: relative;*!
 }
 
 .section_topic_1 {
@@ -235,21 +235,21 @@ main > section > div > div:nth-child(2) {
 }
 
 #about_me_main_container {
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     height: calc(930px - 104px);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 #section_about_me > div > div:nth-child(1) {
-    /*border: 2px solid green;*/
+    !*border: 2px solid green;*!
     position: relative;
 }
 
 #section_about_me > div > div:nth-child(2) {
-    /*border: 2px solid blueviolet;*/
+    !*border: 2px solid blueviolet;*!
     position: relative;
-    /*top: 20px;*/
+    !*top: 20px;*!
     bottom: 30px;
     right: 100px;
     margin: auto;
@@ -261,7 +261,7 @@ main > section > div > div:nth-child(2) {
     left: 0;
     right: 0;
     top: 70px;
-    /*bottom: 90px;*/
+    !*bottom: 90px;*!
     margin: auto;
     width: 390px;
 }
@@ -289,17 +289,17 @@ main > section > div > div:nth-child(2) {
     height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     margin-left: -8px;
     margin-top: 65px;
 
 }
 
 #about_me_experience_container > div {
-    /*border: 2px solid black;*/
+    !*border: 2px solid black;*!
     font-family: 'KoHo', sans-serif;
     font-size: 25px;
-    /*position: relative;*/
+    !*position: relative;*!
 }
 
 
@@ -310,7 +310,7 @@ main > section > div > div:nth-child(2) {
 }
 
 #about_me_experience_container > div > h2 {
-    /*position: absolute;*/
+    !*position: absolute;*!
     width: max-content;
     height: max-content;
     bottom: 35px;
@@ -352,20 +352,20 @@ main > section > div > div:nth-child(2) {
     font-size: 20px;
     position: relative;
     left: 7px;
-}
+}*/
 
 
 /*---------------------------------------------# MY SERVICES SECTION #------------------------------------------------*/
 
 
-#section_my_services {
+/*#section_my_services {
     width: 100%;
     height: 930px;
-    /*background-color: bisque;*/
+    !*background-color: bisque;*!
 }
 
 #my_services_main_container {
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     height: calc(930px - 104px);
     display: flex;
     flex-direction: row;
@@ -375,7 +375,7 @@ main > section > div > div:nth-child(2) {
 }
 
 #my_services_main_container > div {
-    /*border: 2px solid black;*/
+    !*border: 2px solid black;*!
     width: 350px;
     height: 450px;
     margin: 50px;
@@ -422,18 +422,24 @@ main > section > div > div:nth-child(2) {
 #my_services_main_container > div:nth-child(3) {
 }
 
+#service-div-1{
+    transition: ease-in-out 0.3s;
+}
+#service-div-1:hover{
+    transform: translateY(-8px);
+}*/
 
 /*---------------------------------------------# Skills SECTION #------------------------------------------------*/
 
 
-#section_skills {
+/*#section_skills {
     width: 100%;
     height: 930px;
-    /*background-color: bisque;*/
+    !*background-color: bisque;*!
 }
 
 #skills_main_container {
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     height: calc(930px - 104px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -443,7 +449,7 @@ main > section > div > div:nth-child(2) {
 }
 
 #skills_main_container > div {
-    /*border: 2px solid black;*/
+    !*border: 2px solid black;*!
     width: 510px;
     height: 110px;
 
@@ -477,7 +483,7 @@ main > section > div > div:nth-child(2) {
     position: relative;
     left: 20px;
     top: 25px;
-    /*display: inline;*/
+    !*display: inline;*!
 
 }
 
@@ -515,18 +521,20 @@ main > section > div > div:nth-child(2) {
     top: 22px;
 }
 
-
+.click{
+    background-color: red;
+}*/
 
 /*---------------------------------------------# Education SECTION #------------------------------------------------*/
 
-#section_education {
+/*#section_education {
     width: 100%;
     height: 930px;
-    /*background-color: aliceblue;*/
+    !*background-color: aliceblue;*!
 }
 
 #education_main_container{
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     height: calc(930px - 104px);
     position: relative;
 }
@@ -554,7 +562,7 @@ main > section > div > div:nth-child(2) {
 
 #education_main_container > div > div:nth-child(1){
     left: -1px;
-    /*right: 0;*/
+    !*right: 0;*!
     top: 0;
     bottom: 0;
     margin: auto;
@@ -589,24 +597,24 @@ main > section > div > div:nth-child(2) {
     left: 0;
     right: 0;
     top: 160px;
-    /*bottom: 0;*/
+    !*bottom: 0;*!
     margin: auto;
 }
 
 #education_main_container >  div > div:nth-child(5){
     position: absolute;
     left: 250px;
-    /*right: 0;*/
-    /*top: 0;*/
+    !*right: 0;*!
+    !*top: 0;*!
     bottom: 150px;
     margin: auto;
 }
 
 #education_main_container >  div > div:nth-child(6){
     position: absolute;
-    /*left: 0;*/
+    !*left: 0;*!
     right: 250px;
-    /*top: 0;*/
+    !*top: 0;*!
     bottom: 160px;
     margin: auto;
 }
@@ -640,7 +648,7 @@ main > section > div > div:nth-child(2) {
 
 .section_education_shape{
     width: 220px;
-}
+}*/
 
 
 
@@ -648,14 +656,14 @@ main > section > div > div:nth-child(2) {
 
 
 
-#section_portfolio {
+/*#section_portfolio {
     width: 100%;
     height: 930px;
-    /*background-color: bisque;*/
+    !*background-color: bisque;*!
 }
 
 #portfolio_main_container{
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     height: calc(930px - 104px);
     position: relative;
 }
@@ -663,7 +671,7 @@ main > section > div > div:nth-child(2) {
 #portfolio_main_container > div{
     width: 800px;
     height: 300px;
-    /*border: 2px solid black;*/
+    !*border: 2px solid black;*!
     position: absolute;
     top: 0;
     bottom: 50px;
@@ -676,7 +684,7 @@ main > section > div > div:nth-child(2) {
 #portfolio_main_container > div >div{
     width: 3200px;
     height: 300px;
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     display: flex;
 
     animation-name: slides;
@@ -704,7 +712,7 @@ main > section > div > div:nth-child(2) {
 .portfolio_slide_divs{
     width: 800px;
     height: 300px;
-    /*border: 2px solid green;*/
+    !*border: 2px solid green;*!
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -714,7 +722,7 @@ main > section > div > div:nth-child(2) {
     border-radius: 8px;
     position: absolute;
     left: 30px;
-    /*right: 0;*/
+    !*right: 0;*!
     bottom: 0;
     top: 0;
     margin: auto;
@@ -723,23 +731,19 @@ main > section > div > div:nth-child(2) {
 }
 
 .portfolio_slide_divs:nth-child(1){
-    /*background-color: #BEC9E2;*/
+    !*background-color: #BEC9E2;*!
 
 
 }
 
 .portfolio_slide_divs > div:nth-child(1){
-    /*border: 2px solid blue;*/
+    !*border: 2px solid blue;*!
     position: relative;
 }
 
 .portfolio_slide_divs > div:nth-child(2){
-    /*border: 2px solid blue;*/
+    !*border: 2px solid blue;*!
 
-}
-
-.click{
-    background-color: red;
 }
 
 .section_portfolio_h2{
@@ -749,15 +753,9 @@ main > section > div > div:nth-child(2) {
     height: max-content;
     position: relative;
     left: 45px;
-    /*right: 10px;*/
+    !*right: 10px;*!
     top: 60px;
     margin-bottom: 0px;
-}
-#service-div-1{
-    transition: ease-in-out 0.3s;
-}
-#service-div-1:hover{
-    transform: translateY(-8px);
 }
 
 .section_portfolio_p{
@@ -771,9 +769,9 @@ main > section > div > div:nth-child(2) {
     left: 45px;
     margin-top: 0;
     margin-bottom: 5px;
-    /*right: 30px;*/
-    /*margin: auto;*/
-    /*font-weight: bold;*/
+    !*right: 30px;*!
+    !*margin: auto;*!
+    !*font-weight: bold;*!
 }
 
 .github_btn{
@@ -806,16 +804,16 @@ main > section > div > div:nth-child(2) {
 }
 
 .portfolio_slide_divs:nth-child(2){
-    /*background-color: aquamarine;*/
+    !*background-color: aquamarine;*!
 }
 
 .portfolio_slide_divs:nth-child(3){
-    /*background-color: #868B8D;*/
+    !*background-color: #868B8D;*!
 }
 
 .portfolio_slide_divs:nth-child(4){
-    /*background-color: #BEC9E2;*/
-}
+    !*background-color: #BEC9E2;*!
+}*/
 
 
 
@@ -827,15 +825,7 @@ main > section > div > div:nth-child(2) {
 
 
 
-#section_contact_me {
-    width: 100%;
-    height: 930px;
-    background-color: aliceblue;
-}
-#contact_me_main_container{
-    /*border: 2px solid red;*/
-    height: calc(930px - 104px);
-}
+
 
 
 
@@ -844,8 +834,3 @@ main > section > div > div:nth-child(2) {
 
 /*-----------------------------------------------------# FOOTER #----------------------------------------------------*/
 
-#footer{
-    width: 100%;
-    height: 400px;
-    background-color: #273C75;
-}

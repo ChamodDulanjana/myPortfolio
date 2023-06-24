@@ -1,0 +1,25 @@
+#section_contact_me {
+    width: 100%;
+    height: 930px;
+    background-color: aliceblue;
+}
+#contact_me_main_container{
+    /*border: 2px solid red;*/
+    height: calc(930px - 104px);
+}
+
+
+
+/*--------------------------------------------------Media Query-------------------------------------------------------*/
+/* ################################################################################################################## */
+
+
+@media screen and (max-width: 1540px) {
+    #section_contact_me {
+        height: 720px;
+    }
+
+    #contact_me_main_container{
+        height: calc(710px - 88px);
+    }
+}

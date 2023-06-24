@@ -1,0 +1,117 @@
+#section_my_services {
+    width: 100%;
+    height: 930px;
+    /*background-color: bisque;*/
+}
+
+#my_services_main_container {
+    /*border: 2px solid red;*/
+    height: calc(930px - 104px);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+
+}
+
+#my_services_main_container > div {
+    /*border: 2px solid black;*/
+    width: 350px;
+    height: 450px;
+    margin: 50px;
+    margin-bottom: 150px;
+    box-shadow: 0 0 3px 0;
+
+}
+
+#my_services_main_container > div > h2 {
+    font-family: 'Inter', sans-serif;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    top: 230px;
+    left: 40px;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
+#my_services_main_container > div > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    width: max-content;
+    height: max-content;
+    color: #4D6197;
+    position: relative;
+    left: 40px;
+    top: 260px;
+}
+
+#my_services_main_container > div > img {
+    width: 37px;
+    position: relative;
+    left: 40px;
+    top: 210px;
+}
+
+#my_services_main_container > div:nth-child(1) {
+}
+
+#my_services_main_container > div:nth-child(2) {
+}
+
+#my_services_main_container > div:nth-child(3) {
+}
+
+#service-div-1{
+    transition: ease-in-out 0.3s;
+}
+#service-div-1:hover{
+    transform: translateY(-8px);
+}
+
+
+
+
+
+/*--------------------------------------------------Media Query-------------------------------------------------------*/
+/* ################################################################################################################## */
+
+
+@media screen and (max-width: 1540px) {
+    #section_my_services{
+        height: 720px;
+    }
+
+    #my_services_main_container{
+        height: calc(710px - 88px);
+    }
+
+    #my_services_main_container > div {
+        width: 300px;
+        height: 400px;
+        margin: 30px;
+        margin-bottom: 100px;
+        box-shadow: 0 0 3px 0;
+
+    }
+
+    #my_services_main_container > div > h2{
+        font-size: 20px;
+        top: 200px;
+        left: 35px;
+        padding-bottom: 7px;
+        margin: 0;
+    }
+
+    #my_services_main_container > div > p{
+        font-size: 13px;
+        left: 35px;
+        top: 220px;
+    }
+
+    #my_services_main_container > div > img{
+        width: 32px;
+        left: 35px;
+        top: 185px;
+    }
+}

@@ -182,10 +182,8 @@
     }
 
     #section_about_me > div > div:nth-child(2) {
-        /*top: 20px;*/
         bottom: 25px;
         right: 65px;
-        /*left: 30px;*/
     }
 
     #section_about_me > div > div:nth-child(2) > h2 {
@@ -201,7 +199,6 @@
     #about_me_experience_container {
         width: 350px;
         height: 80px;
-        margin-left: -8px;
         margin-top: 45px;
     }
 
@@ -222,11 +219,6 @@
         margin-top: 45px;
     }
 
-    #download_span {
-        font-size: 20px;
-        position: relative;
-        left: 7px;
-    }
 }
 
 

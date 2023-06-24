@@ -1,0 +1,228 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 4px;
+}
+
+
+header > nav > ul {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin: 15px;
+
+}
+
+main {
+    width: 100%;
+    height: 848px;
+    /*background-color: #b6d4fe;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main > div:nth-child(1) {
+    /*border: 2px solid red;*/
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    margin: auto;
+}
+
+main > div:nth-child(2) {
+    /*border: 2px solid green;*/
+    /*background-image: url("/assets/img/main img.png");*/
+    position: relative;
+}
+
+#main_img {
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 480px;
+}
+
+
+main > div:nth-child(1) > p:nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    color: #4D6197;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+
+}
+
+main > div:nth-child(1) > p:nth-child(2) {
+    font-family: 'Inder', sans-serif;
+    font-size: 50px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+main > div:nth-child(1) > p:nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    color: #868B8D;
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
+
+main > div:nth-child(1) > p:nth-child(4) {
+    font-family: 'Open Sans', sans-serif;
+    color: #868B8D;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+main > div:nth-child(1) > p:nth-child(5) {
+    font-family: 'Open Sans', sans-serif;
+    color: #868B8D;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+main > div:nth-child(1) > p:nth-child(6) {
+    font-family: 'Open Sans', sans-serif;
+    color: #868B8D;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+
+.icons {
+    width: 150px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+
+}
+
+.social_icons {
+    font-size: 30px;
+    color: #4D6197;
+}
+
+#github {
+
+}
+
+#linkedin {
+
+}
+
+#twitter {
+
+}
+
+#contact_me {
+    color: white;
+    background-color: #273C75;
+    font-family: 'Inter', sans-serif;
+    border-radius: 7px;
+    border: 0;
+    width: 125px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.scroll_down {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    display: inline;
+}
+
+.scroll_mouse {
+    font-size: 20px;
+    color: #4D6197;
+}
+
+
+
+
+
+/*--------------------------------------------------Media Query-------------------------------------------------------*/
+/* ################################################################################################################## */
+
+
+@media screen and (max-width: 1540px) {
+    main {
+        height: 630px;
+    }
+
+    #main_img {
+        width: 360px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(2) {
+        font-size: 40px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(4) {
+        font-size: 15px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(5) {
+        font-size: 15px;
+    }
+
+    main > div:nth-child(1) > p:nth-child(6) {
+        font-size: 15px;
+    }
+
+    .icons {
+        width: 150px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

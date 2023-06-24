@@ -1,4 +1,4 @@
-/*
+/*!*
 .container{
     max-width: 768px;
     margin-left: 20px;
@@ -8,7 +8,7 @@
     display: grid;
     gap: 1.5rem;
 }
-*/
+*!
 
 header {
     position: relative;
@@ -37,14 +37,14 @@ header > nav > ul > li {
 main {
     width: 100%;
     height: 848px;
-    /*background-color: #b6d4fe;*/
+    !*background-color: #b6d4fe;*!
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
 main > div:nth-child(1) {
-    /*border: 2px solid red;*/
+    !*border: 2px solid red;*!
     position: relative;
     top: 0;
     bottom: 0;
@@ -53,8 +53,8 @@ main > div:nth-child(1) {
 }
 
 main > div:nth-child(2) {
-    /*border: 2px solid green;*/
-    /*background-image: url("/assets/img/main img.png");*/
+    !*border: 2px solid green;*!
+    !*background-image: url("/assets/img/main img.png");*!
     position: relative;
 }
 
@@ -117,9 +117,9 @@ main > div:nth-child(1) > p:nth-child(6) {
 }
 
 
-/*#868B8D*/
+!*#868B8D*!
 
-/*
+!*
 main > section > div:nth-child(1) {
     width: 100%;
     height: 800px;
@@ -145,7 +145,7 @@ main > section > div > div:nth-child(2) {
     background-color: red;
     position: absolute;
     right: 0;
-}*/
+}*!
 
 
 .icons {
@@ -197,7 +197,7 @@ main > section > div > div:nth-child(2) {
 .scroll_mouse {
     font-size: 20px;
     color: #4D6197;
-}
+}*/
 
 /*---------------------------------------------# ABOUT ME SECTION #---------------------------------------------------*/
 
@@ -738,6 +738,10 @@ main > section > div > div:nth-child(2) {
 
 }
 
+.click{
+    background-color: red;
+}
+
 .section_portfolio_h2{
     font-family: 'Inter', sans-serif;
     font-size: 21px;
@@ -748,6 +752,12 @@ main > section > div > div:nth-child(2) {
     /*right: 10px;*/
     top: 60px;
     margin-bottom: 0px;
+}
+#service-div-1{
+    transition: ease-in-out 0.3s;
+}
+#service-div-1:hover{
+    transform: translateY(-8px);
 }
 
 .section_portfolio_p{

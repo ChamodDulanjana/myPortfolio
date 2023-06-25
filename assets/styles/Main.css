@@ -170,6 +170,7 @@ main > div:nth-child(1) > p:nth-child(6) {
 
     #main_img {
         width: 360px;
+        top: -10px;
     }
 
     main > div:nth-child(1) > p:nth-child(1) {
@@ -202,6 +203,48 @@ main > div:nth-child(1) > p:nth-child(6) {
     }
 }
 
+    /*----------------------------------------------------------------------------------------------------------------*/
+
+
+    @media screen and (max-width: 990px) {
+        #main_img {
+            width: 300px;
+            top: -20px;
+        }
+
+        main > div:nth-child(1) {
+            left: 40px;
+        }
+
+       main > div:nth-child(1) > p:nth-child(1) {
+            font-size: 22px;
+        }
+
+        main > div:nth-child(1) > p:nth-child(2) {
+            font-size: 35px;
+        }
+
+        /*     main > div:nth-child(1) > p:nth-child(3) {
+                font-size: 18px;
+            }
+
+            main > div:nth-child(1) > p:nth-child(4) {
+                font-size: 15px;
+            }
+
+            main > div:nth-child(1) > p:nth-child(5) {
+                font-size: 15px;
+            }
+
+            main > div:nth-child(1) > p:nth-child(6) {
+                font-size: 15px;
+            }
+
+            .icons {
+                width: 150px;
+                height: 30px;
+            }*/
+    }
 
 
 

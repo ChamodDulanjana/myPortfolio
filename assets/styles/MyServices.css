@@ -74,24 +74,14 @@
 .service-main-div{
     transition: ease-in-out 0.3s;
 }
+
 .service-main-div:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 5px 3px green;
     border-bottom-color: #273C75;
-    /*z-index: 999;*/
-    /*border: 2px solid red;*/
+
 }
-/*.uil-angle-right-b{
-    transition: ease-in-out 0.3s;
-}*/
 
-/*.uil-angle-right-b:hover{
-    !*transform: translateY(10px);*!
-    position: relative;
-    left: 10px;
-    color: red;
-
-}*/
 
 .btn_view_more{
     color: #4D6197;
@@ -100,26 +90,20 @@
     font-size: 15px;
     border-radius: 7px;
     border: 0;
-    width: 110px;
-    height: 20px;
+    width: 150px;
+    height: 40px;
     cursor: pointer;
     position: relative;
     left: 33px;
     top: 260px;
 }
 
-#web_dev_view_more1 {
-
+.web_dev_view_more_span:hover.button_icon{
+    /*transform: translateX(10px);*/
+    color: red;
+    position: relative;
+    /*left: 30px;*/
 }
-
-#web_dev_view_more2 {
-
-}
-
-#web_dev_view_more3 {
-
-}
-
 
 
 

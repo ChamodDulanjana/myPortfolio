@@ -1,13 +1,12 @@
 #section_skills {
     width: 100%;
     height: 930px;
-    background-color: azure;
+    /*background-color: azure;*/
     /*border: 2px solid red;*/
-
 }
 
 #skills_main_container {
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     height: calc(930px - 132px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,32 +17,22 @@
 
 #skills_main_container > div {
     /*border: 2px solid black;*/
+    position: relative;
     width: 500px;
     height: 110px;
 
 }
 
 #skills_main_container > div:nth-child(1) {
-    position: relative;
-    /*left: 50px;*/
-    /*bottom: 30px;*/
 
 }
 
 #skills_main_container > div:nth-child(2) {
-    position: relative;
-    /*left: -50px;*/
-    /*bottom: 30px;*/
-
 
 }
 
 #skills_main_container > div:nth-child(3) {
-    position: relative;
-    /*left: 50px;*/
     top: -100px;
-
-
 }
 
 #skills_main_container > div > img {
@@ -57,6 +46,8 @@
 
 #skills_main_container > div > h2 {
     font-family: 'Inter', sans-serif;
+    width: fit-content;
+    height: fit-content;
     font-size: 22px;
     display: inline;
     position: relative;
@@ -67,6 +58,8 @@
 
 #skills_main_container > div > h3 {
     font-family: 'Pathway Extreme', sans-serif;
+    width: fit-content;
+    height: fit-content;
     font-size: 14px;
     color: #868B8D;
     position: relative;
@@ -75,22 +68,12 @@
 
 }
 
-/*.arrow_up {
-    width: 48px;
-    position: relative;
-    left: 180px;
-    top: 22px;
-}
-
-.arrow_up_second {
-    width: 48px;
-    position: relative;
-    left: 240px;
-    top: 22px;
-}*/
-
 .click{
-    background-color: red;
+    /*transform: rotate(90deg);*/
+    background-color: green;
+    /*font-size: 30px;*/
+    height: 200px;
+    /*width: 800px;*/
 }
 
 .skill_down_arrow{
@@ -99,14 +82,9 @@
     position: relative;
     left: 150px;
     top: 10px;
+    cursor: pointer;
 }
 
-/*
-.skill_down_arrow_span{
-    color: #4D6197;
-    font-size: 20px;
-}
-*/
 
 
 
@@ -127,35 +105,17 @@
         /*border: 2px solid black;*/
         width: 350px;
         height: 95px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-
     }
 
     #skills_main_container > div:nth-child(1){
-        /*position: relative;
-        left: 50px;
-        top: 0;*/
 
     }
 
     #skills_main_container > div:nth-child(2){
-        /*position: relative;
-        left: -40px;
-        top: 0;*/
-
 
     }
 
     #skills_main_container > div:nth-child(3){
-       /* position: relative;
-        left: 50px;
-        top: -80px;*/
-
 
     }
 
@@ -165,31 +125,14 @@
         left: 20px;
         top: 20px;
         /*display: inline;*/
-
     }
 
     #skills_main_container > div > h2{
-        font-family: 'Inter', sans-serif;
-        width: fit-content;
-        height: fit-content;
         font-size: 18px;
-        display: inline;
-        position: relative;
-        left: 40px;
-        top: 0;
-
     }
 
     #skills_main_container > div > h3{
-        font-family: 'Pathway Extreme', sans-serif;
-        width: fit-content;
-        height: fit-content;
         font-size: 12px;
-        color: #868B8D;
-        position: relative;
-        left: 85px;
-        top: 0;
-
     }
 
     .skill_down_arrow{
@@ -200,17 +143,4 @@
         left: 150px;
     }
 
-/*    .arrow_up{
-        width: 40px;
-        position: relative;
-        left: 130px;
-        top: 18px;
-    }
-
-    .arrow_up_second{
-        width: 40px;
-        position: relative;
-        left: 200px;
-        top: 18px;
-    }*/
 }

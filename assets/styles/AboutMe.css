@@ -33,7 +33,7 @@
 
 #about_me_main_container {
     /*border: 2px solid red;*/
-    height: calc(930px - 104px);
+    height: calc(930px - 132px);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -41,6 +41,7 @@
 #section_about_me > div > div:nth-child(1) {
     /*border: 2px solid green;*/
     position: relative;
+
 }
 
 #section_about_me > div > div:nth-child(2) {
@@ -48,35 +49,36 @@
     position: relative;
     /*top: 20px;*/
     bottom: 30px;
-    right: 100px;
     margin: auto;
     width: max-content;
 }
 
 #about_me_img {
     position: absolute;
+    top: 40px;
+    /*bottom: 0;*/
     left: 0;
     right: 0;
-    top: 70px;
-    /*bottom: 90px;*/
     margin: auto;
-    width: 390px;
 }
 
 #section_about_me > div > div:nth-child(2) > h2 {
     font-family: 'KoHo', sans-serif;
     font-size: 35px;
     margin-left: 13px;
+
 }
 
 #section_about_me > div > div:nth-child(2) > p {
     font-family: 'Rambla', sans-serif;
     color: #868B8D;
-    font-size: 19px;
-    margin: 13px;
+    width: max-content;
+    height: max-content;
+    font-size: 20px;
+    margin: 11px;
 }
 
-#about_me_span {
+.about_me_span {
     color: #4D6197;
     font-weight: bold;
 }
@@ -96,7 +98,10 @@
     /*border: 2px solid black;*/
     font-family: 'KoHo', sans-serif;
     font-size: 25px;
-    /*position: relative;*/
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 
@@ -120,16 +125,17 @@
 #about_me_experience_container > div > p {
     color: #868B8D;
     font-family: 'Pathway Extreme', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
     width: max-content;
     height: max-content;
+    font-size: 15px;
+    font-weight: bold;
     position: relative;
     left: 0;
     right: 0;
     margin: auto;
     padding-top: 2px;
     padding-bottom: 2px;
+    /*padding-left: 20px;*/
 }
 
 #download_cv {
@@ -175,7 +181,7 @@
     }
 
     #about_me_main_container {
-        height: calc(710px - 88px);
+        height: calc(710px - 83px);
     }
 
     #about_me_img {
@@ -193,7 +199,7 @@
 
     #section_about_me > div > div:nth-child(2) > p {
         font-size: 17px;
-        margin: 11px;
+        margin: 10px;
 
     }
 
@@ -235,6 +241,10 @@
             font-size: 15px;
             /*margin: 8px;*/
 
+        }
+
+        #about_me_img{
+            width: 300px;
         }
 
 }

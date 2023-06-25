@@ -1,15 +1,27 @@
 
-var img = document.getElementById("arrow-1");
+var img = document.getElementById("btn_skill_down_arrow1");
 img.addEventListener('click', () => {
-    var div = document.getElementById("div-1");
-    if (div.classList.toString() !== "click") {
-        div.classList.add("click");
+    var i = document.getElementById("div-1");
+    if (i.classList.toString() !== "click") {
+        i.classList.add("click");
     } else {
-        div.classList.remove("click");
+        i.classList.remove("click");
     }
 
 });
 
+
+//
+// var img = document.getElementById("btn_skill_down_arrow1");
+// img.addEventListener('click', () => {
+//     var div = document.getElementById("div-1");
+//     if (div.classList.toString() !== "click") {
+//         div.classList.add("click");
+//     } else {
+//         div.classList.remove("click");
+//     }
+//
+// });
 
 
 /*

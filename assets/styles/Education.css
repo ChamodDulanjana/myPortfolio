@@ -2,23 +2,18 @@
     width: 100%;
     height: 930px;
     /*background-color: aliceblue;*/
-}
-
-#education_main_container{
     /*border: 2px solid red;*/
-    height: calc(930px - 104px);
     position: relative;
 }
 
-#education_main_container > div:nth-child(1){
+.chart_bar{
     width: 400px;
     height: 0px;
     border: 1px solid black;
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 15px;
+    top: 490px;
     margin: auto;
     transform: rotate(90deg);
 }
@@ -29,26 +24,27 @@
     background-color: #273C75;
     border-radius: 10px;
     position: absolute;
+    left: -10px;
 }
 
-#education_main_container > div > div:nth-child(1){
-    left: -1px;
-    /*right: 0;*/
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-#education_main_container > div >  div:nth-child(2){
-    left: 0;
+.chart_bar > div:nth-child(1){
+    left: -400px;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
 
-#education_main_container >  div > div:nth-child(3){
-    right: -1px;
+.chart_bar > div:nth-child(2){
+    left: -1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.chart_bar > div:nth-child(3){
+    right: -400px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -63,7 +59,7 @@
     transform: rotate(270deg);
 }
 
-#education_main_container >  div > div:nth-child(4){
+.chart_bar > div:nth-child(4){
     position: absolute;
     left: 0;
     right: 0;
@@ -72,7 +68,7 @@
     margin: auto;
 }
 
-#education_main_container >  div > div:nth-child(5){
+.chart_bar > div:nth-child(5){
     position: absolute;
     left: 250px;
     /*right: 0;*/
@@ -81,7 +77,7 @@
     margin: auto;
 }
 
-#education_main_container >  div > div:nth-child(6){
+.chart_bar > div:nth-child(6){
     position: absolute;
     /*left: 0;*/
     right: 250px;
@@ -119,6 +115,8 @@
 
 .section_education_shape{
     width: 220px;
+    position: relative;
+    top: -50px;
 }
 
 
@@ -132,48 +130,53 @@
         height: 720px;
     }
 
-    #education_main_container{
-        height: calc(710px - 88px);
-    }
-
-    #education_main_container > div:nth-child(1){
-        width: 360px;
+    .chart_bar{
+        width: 350px;
+        top: 408px;
     }
 
     .section_education_div_dot{
-        width: 16px;
-        height: 16px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .chart_bar > div:nth-child(1){
+        left: -360px;
+    }
+
+    .chart_bar > div:nth-child(3){
+        right: -360px;
     }
 
     .section_education_base_div{
-        width: 280px;
-        height: 100px;
+        width: 260px;
+        height: 95px;
     }
 
-    #education_main_container >  div > div:nth-child(4){
-        top: 150px;
+    .chart_bar > div:nth-child(4){
+        top: 140px;
     }
 
-    #education_main_container >  div > div:nth-child(5){
+    .chart_bar > div:nth-child(5){
         left: 220px;
+        bottom: 140px;
     }
 
-    #education_main_container >  div > div:nth-child(6){
+    .chart_bar > div:nth-child(6){
         right: 220px;
-        bottom: 150px;
+        bottom: 140px;
     }
 
     .section_education_h2{
         font-size: 18px;
-        top: 24px;
     }
 
     .section_education_p{
-        font-size: 13px;
-        top: 34px;
+        font-size: 12px;
     }
 
     .section_education_shape{
-        width: 180px;
+        width: 190px;
     }
+
 }

@@ -1,14 +1,14 @@
 #section_skills {
     width: 100%;
     height: 930px;
-    /*background-color: bisque;*/
+    background-color: azure;
     /*border: 2px solid red;*/
 
 }
 
 #skills_main_container {
-    /*border: 2px solid red;*/
-    height: calc(930px - 104px);
+    border: 2px solid green;
+    height: calc(930px - 132px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -18,29 +18,29 @@
 
 #skills_main_container > div {
     /*border: 2px solid black;*/
-    width: 510px;
+    width: 500px;
     height: 110px;
 
 }
 
 #skills_main_container > div:nth-child(1) {
     position: relative;
-    left: 50px;
-    bottom: 30px;
+    /*left: 50px;*/
+    /*bottom: 30px;*/
 
 }
 
 #skills_main_container > div:nth-child(2) {
     position: relative;
-    left: -50px;
-    bottom: 30px;
+    /*left: -50px;*/
+    /*bottom: 30px;*/
 
 
 }
 
 #skills_main_container > div:nth-child(3) {
     position: relative;
-    left: 50px;
+    /*left: 50px;*/
     top: -100px;
 
 
@@ -75,7 +75,7 @@
 
 }
 
-.arrow_up {
+/*.arrow_up {
     width: 48px;
     position: relative;
     left: 180px;
@@ -87,11 +87,27 @@
     position: relative;
     left: 240px;
     top: 22px;
-}
+}*/
 
 .click{
     background-color: red;
 }
+
+.skill_down_arrow{
+    color: #4D6197;
+    font-size: 40px;
+    position: relative;
+    left: 150px;
+    top: 10px;
+}
+
+/*
+.skill_down_arrow_span{
+    color: #4D6197;
+    font-size: 20px;
+}
+*/
+
 
 
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
@@ -104,35 +120,41 @@
     }
 
     #skills_main_container{
-        height: calc(710px - 88px);
+        height: calc(710px - 114px);
     }
 
     #skills_main_container > div{
         /*border: 2px solid black;*/
-        width: 400px;
+        width: 350px;
         height: 95px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
 
     }
 
     #skills_main_container > div:nth-child(1){
-        position: relative;
+        /*position: relative;
         left: 50px;
-        top: 0;
+        top: 0;*/
 
     }
 
     #skills_main_container > div:nth-child(2){
-        position: relative;
+        /*position: relative;
         left: -40px;
-        top: 0;
+        top: 0;*/
 
 
     }
 
     #skills_main_container > div:nth-child(3){
-        position: relative;
+       /* position: relative;
         left: 50px;
-        top: -80px;
+        top: -80px;*/
 
 
     }
@@ -148,6 +170,8 @@
 
     #skills_main_container > div > h2{
         font-family: 'Inter', sans-serif;
+        width: fit-content;
+        height: fit-content;
         font-size: 18px;
         display: inline;
         position: relative;
@@ -158,6 +182,8 @@
 
     #skills_main_container > div > h3{
         font-family: 'Pathway Extreme', sans-serif;
+        width: fit-content;
+        height: fit-content;
         font-size: 12px;
         color: #868B8D;
         position: relative;
@@ -166,7 +192,15 @@
 
     }
 
-    .arrow_up{
+    .skill_down_arrow{
+        left: 70px;
+    }
+
+    #btn_skill_down_arrow2{
+        left: 150px;
+    }
+
+/*    .arrow_up{
         width: 40px;
         position: relative;
         left: 130px;
@@ -178,5 +212,5 @@
         position: relative;
         left: 200px;
         top: 18px;
-    }
+    }*/
 }

@@ -198,17 +198,23 @@
 
     #portfolio_left_arrow_span{
         font-size: 55px;
-        left: -60px;
+        left: -62px;
     }
 
     #portfolio_right_arrow_span{
         font-size: 55px;
-        right: -60px;
+        right: -62px;
     }
 
     .btn_arrow_div{
         width: 670px;
         height: 260px;
     }
+
+}
+
+
+
+@media screen and (max-width: 795px) {
 
 }

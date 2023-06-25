@@ -210,10 +210,11 @@ main > div:nth-child(1) > p:nth-child(6) {
         #main_img {
             width: 300px;
             top: -20px;
+            left: 35px;
         }
 
         main > div:nth-child(1) {
-            left: 40px;
+            left: 25px;
         }
 
        main > div:nth-child(1) > p:nth-child(1) {

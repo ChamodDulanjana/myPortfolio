@@ -255,7 +255,7 @@
     @media screen and (max-width: 990px) {
 
         #about_me_img{
-            width: 290px;
+            width: 270px;
         }
 
         #section_about_me > div > div:nth-child(2) {
@@ -269,6 +269,13 @@
 
         #section_about_me > div > div:nth-child(2) > h2 {
             font-size: 28px;
+        }
+
+        #download_cv {;
+            width: 170px;
+            height: 50px;
+            margin-top: 65px;
+            margin-left: 13px;
         }
 
     }

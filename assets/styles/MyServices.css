@@ -149,6 +149,30 @@
 }
 
 
-    @media screen and (max-width: 990px) {
-        
+    /*----------------------------------------------------------------------------------------------------------------*/
+
+
+    @media screen and (max-width: 950px) {
+        #my_services_main_container > div {
+            width: 280px;
+            height: 340px;
+        }
+
+        #my_services_main_container > div > h2{
+            font-size: 18px;
+            top: 185px;
+            left: 30px;
+        }
+
+        .view_more_span {
+            font-size: 12px;
+            top: 210px;
+            left: 32px;
+        }
+
+        #my_services_main_container > div > img{
+            width: 30px;
+            top: 170px;
+            left: 30px;
+        }
     }

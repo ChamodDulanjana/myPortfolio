@@ -10,6 +10,7 @@
             property="og:description" content="Hello i'm chamod Web developer"/>
     <meta property="og:title" content="Chamod's web"/>
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/fontsAwesome/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/Main.css">
     <link rel="stylesheet" href="assets/styles/AboutMe.css">
     <link rel="stylesheet" href="assets/styles/MyServices.css">
@@ -63,34 +64,31 @@
         <p>producing quality work</p>
 
         <div class="icons">
-            <div id="github">
+            <div>
                 <a href="https://github.com/ChamodDulanjana" class="social_icons">
-                    <i class="uil uil-github-alt"></i>
+                    <i class="fa-brands fa-github" id="github"></i>
                 </a>
             </div>
-            <div id="linkedin">
+            <div>
                 <a href="https://www.linkedin.com/in/chamod-dulanjana-071883266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bwn97aLYHSPyWIrbxUXJU0A%3D%3D"
                    class="social_icons">
-                    <i class="uil uil-linkedin-alt"></i>
+                    <i class="fa-brands fa-linkedin" id="linkedin"></i>
                 </a>
             </div>
-            <div id="twitter">
+            <div>
                 <a href="https://twitter.com/128_Chamod" class="social_icons">
-                    <i class="uil uil-twitter-alt"></i>
+                    <i class="fa-brands fa-twitter" id="twitter"></i>
                 </a>
             </div>
         </div>
 
         <button type="button" id="contact_me">Contact me</button>
 
-        <div class="scroll_button">
-            <a href="" class="scroll_mouse">
-                <i class="uil uil-mouse-alt-2"> </i> scroll down
-                <i class="uil uil-arrow-down"></i>
-            </a>
-
-
-        </div>
+        <span class="btn_mouse_scroll" id="btn_mouse_scroll_id">
+                <i class="uil uil-mouse-alt-2 mouse_scroll_icons"> </i>
+                    scroll down
+                <i class="uil uil-arrow-down mouse_scroll_icons" id="scroll_down_arrow"></i>
+        </span>
     </div>
     <div>
         <img src="assets/img/main img.png" alt="Main Img" id="main_img">
@@ -371,6 +369,7 @@
 </footer>
 
 <script src="assets/script/Skills.js"></script>
+<script src="assets/script/Main.js"></script>
 
 </body>
 </html>

@@ -1,10 +1,6 @@
 #section_about_me {
     width: 100%;
     height: 930px;
-    /*display: grid;*/
-    /*grid-template-columns: 1fr 1fr;*/
-    /*background-color: antiquewhite;*/
-    /*position: relative;*/
 }
 
 .section_topic_1 {
@@ -54,6 +50,7 @@
 }
 
 #about_me_img {
+    width: 400px;
     position: absolute;
     top: 50px;
     /*bottom: 0;*/
@@ -64,7 +61,7 @@
 
 #section_about_me > div > div:nth-child(2) > h2 {
     font-family: 'KoHo', sans-serif;
-    font-size: 35px;
+    font-size: 33px;
     margin-left: 12px;
 
 }
@@ -74,8 +71,8 @@
     color: #868B8D;
     width: max-content;
     height: max-content;
-    font-size: 20px;
-    margin: 11px;
+    font-size: 19px;
+    margin: 10px;
 }
 
 .about_me_span {
@@ -138,14 +135,17 @@
     /*padding-left: 20px;*/
 }
 
+#about_me_experience_container > div:nth-child(3) {
+    top: -8px;
+}
 #download_cv {
     color: white;
-    background-color: #273C75;
+    background-color: #4D6197;
     font-family: 'Inter', sans-serif;
-    border-radius: 7px;
+    border-radius: 10px;
     border: 0;
     width: 170px;
-    height: 50px;
+    height: 55px;
     margin-top: 65px;
     margin-left: 13px;
     cursor: pointer;
@@ -155,6 +155,10 @@
     font-size: 20px;
     position: relative;
     left: 7px;
+}
+
+#download_cv:hover{
+    background-color: #273C75;
 }
 
 

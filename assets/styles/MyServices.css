@@ -77,18 +77,19 @@
 .view_more_span{
     color: #4D6197;
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     cursor: pointer;
     position: relative;
     left: 40px;
     top: 270px;
 }
 
-.web_dev_view_more_span:hover.button_icon{
-    /*transform: translateX(10px);*/
-    color: red;
+.view_more{
     position: relative;
-    /*left: 30px;*/
+    top: 0;
+    left: 2px;
+    font-size: 11px;
+    transition: ease-in-out 0.3s;
 }
 
 

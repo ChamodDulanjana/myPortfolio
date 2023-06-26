@@ -6,7 +6,9 @@
 
 #footer > div{
     /*border: 2px solid red;*/
-    width: 1100px;
+    /*width: 1100px;
+    height: 140px;*/
+    width: 80vw;
     height: 140px;
     position: relative;
     left: 0;
@@ -15,6 +17,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #footer > div > div{
@@ -45,7 +48,6 @@
 .footer_h4{
     width: fit-content;
     height: fit-content;
-    /*margin: 0;*/
     position: relative;
     left: 0;
     right: 0;
@@ -56,8 +58,14 @@
 }
 
 .full_stack_developer{
-    left: -85px;
-    top: 20px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    /*top: 10px;*/
+    padding-top: 30px;
+    margin-left: 2px;
+    font-family: 'Inter', sans-serif;
+    color: white;
     font-size: 15px;
 }
 
@@ -70,11 +78,13 @@
 }
 
 #footer_github{
-    left: 90px;
+    /*left: -390px;*/
+    padding-left: 110px;
 }
 
 #footer_linkedin{
-    left: 44px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 #footer_twitter{
@@ -88,7 +98,7 @@
     position: relative;
     left: 0;
     right: 0;
-    bottom: -210px;
+    bottom: -195px;
     margin: auto;
 }
 
@@ -105,6 +115,9 @@
     color: white;
 }
 
+.footer_social_icons2{
+    display: none;
+}
 
 
 
@@ -114,20 +127,49 @@
 /* ################################################################################################################## */
 
 
-@media screen and (max-width: 1540px) {
-    #footer{
-        height: 300px;
+    @media screen and (max-width: 1540px) {
+        #footer{
+            height: 380px;
+        }
+
+        .full_stack_developer{
+            top: 10px;
+        }
+
+        .footer_social_icons2{
+            display: none;
+        }
     }
 
-    #footer_rights{
-        /*border: 2px solid aquamarine;*/
-        width: 300px;
-        height: 40px;
-        position: relative;
-        left: 0;
-        right: 0;
-        bottom: -120px;
-        margin: auto;
+
+
+
+
+
+    @media screen and (max-width: 1300px) {
+        #footer > div{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+
+        .footer_social_icons{
+            display: none;
+        }
+
+        .footer_social_icons2{
+            color: white;
+            position: relative;
+            font-size: 22px;
+            bottom: -60px;
+            padding-left: 55px;
+            margin: 0;
+            display: inline;
+
+
+        }
+
+
+
     }
 
 
@@ -140,7 +182,3 @@
 
 
 
-
-
-
-}

@@ -207,20 +207,27 @@
         <div id="div-1">
             <img src="assets/logo/brackets-curly.svg" alt="Frontend Developer">
             <h2>Frontend Developer </h2>
-            <span class="skill_down_arrow_span"><i class="uil uil-angle-down skill_down_arrow" id="btn_skill_down_arrow1"></i></span>
+            <span class="skill_down_arrow_span">
+                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow1">
+<!--                <i class="uil uil-angle-down " id="btn_skill_down_arrow1"></i>-->
+            </span>
             <h3>More than 1 year</h3>
 
         </div>
         <div>
             <img src="assets/logo/icons8-designer.png" alt="Designer">
             <h2>Designer</h2>
-            <span class="skill_down_arrow_span"><i class="uil uil-angle-down skill_down_arrow" id="btn_skill_down_arrow2"></i></span>
+            <span class="skill_down_arrow_span">
+                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow2">
+            </span>
             <h3>More than 1 year</h3>
         </div>
         <div>
             <img src="assets/logo/server-connection.svg" alt="Backend Developer">
             <h2>Backend Developer</h2>
-            <span class="skill_down_arrow_span"><i class="uil uil-angle-down skill_down_arrow" id="btn_skill_down_arrow3"></i></span>
+            <span class="skill_down_arrow_span">
+                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow3">
+            </span>
             <h3>More than 1 year</h3>
         </div>
 
@@ -333,25 +340,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ###########################################  Section CONTACT ME  ##############################################  -->
 
 
@@ -360,18 +348,97 @@
     <h1 class="section_topic_1">Contact Me</h1>
     <h2 class="section_topic_2">Get in touch</h2>
 
-    <div  id="contact_me_main_container"></div>
+    <div  id="contact_me_main_container">
+        <div>
+            <div>
+                <span class="contact_me_icons">
+                   <i class="uil uil-phone"></i>
+                </span>
+                <h2 class="contact_me_h2">Call me</h2>
+                <p class="contact_me_p">+94 773810577</p>
+            </div>
 
-    <div></div>
+            <div>
+                <span class="contact_me_icons">
+                   <i class="uil uil-envelope-alt"></i>
+                </span>
+                <h2 class="contact_me_h2">Email</h2>
+                <p class="contact_me_p">chamodperera128@gmail.com</p>
+            </div>
+
+            <div>
+                <span class="contact_me_icons">
+                   <i class="uil uil-map-marker"></i>
+                </span>
+                <h2 class="contact_me_h2">Location</h2>
+                <p class="contact_me_p">No 92, Santhanampitiya Rd,</p>
+                <p class="contact_me_p">Gangodawila, Nugegoda. </p>
+            </div>
+
+            <div></div>
+            <div></div>
+        </div>
+
+        <div>
+            <div>
+                <input type="text" id="txt_name" class="contact_input" placeholder="Name">
+            </div>
+
+            <div>
+                <input type="email" id="email" class="contact_input" placeholder="E-mail">
+            </div>
+
+            <div>
+                <input type="text" id="txt_project" class="contact_input" placeholder="Project">
+            </div>
+
+            <div>
+                <textarea id="message_area" rows="15" cols="61" placeholder="Message" class="contact_input"></textarea>
+            </div>
+
+            <button type="button" id="send_message">Send Message
+                <span id="send_message_span">
+                    <i class="uil uil-navigator"></i>
+                </span>
+            </button>
+        </div>
+    </div>
 </section>
-
 
 
 
 <!-- #################################################  FOOTER  ####################################################  -->
 
+
 <footer id="footer">
-    <div></div>
+    <div>
+        <div><h1 id="footer_h1">Chamod</h1></div>
+        <div><h4 class="footer_h4">About</h4></div>
+        <div><h4 class="footer_h4">Services</h4></div>
+        <div><h4 class="footer_h4">Skills</h4></div>
+        <div><h4 class="footer_h4">Portfolio</h4></div>
+        <div>
+            <a href="https://github.com/ChamodDulanjana" class="footer_social_icons" >
+                <i class="uil uil-github-alt "></i>
+            </a>
+        </div>
+        <div></div>
+        <div></div>
+        <div><h4 class="footer_h4 full_stack_developer">Full-Stack Developer</h4></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </footer>
 
 <script src="assets/script/Skills.js"></script>

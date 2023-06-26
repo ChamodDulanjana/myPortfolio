@@ -1,12 +1,12 @@
-var arrow = document.getElementById('view_more_icon1');
-var span = document.getElementById('view_more_span_id1');
+var arrow1 = document.getElementById('view_more_icon1');
+var span1 = document.getElementById('view_more_span_id1');
 
-span.addEventListener('mouseover', function() {
-    arrow.style.left = '10px';
+span1.addEventListener('mouseover', function() {
+    arrow1.style.left = '10px';
 });
 
-span.addEventListener('mouseout', function() {
-    arrow.style.left = '2px';
+span1.addEventListener('mouseout', function() {
+    arrow1.style.left = '2px';
 });
 
 

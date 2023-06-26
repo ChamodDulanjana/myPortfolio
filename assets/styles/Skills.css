@@ -69,22 +69,27 @@
 }
 
 .click{
-    /*transform: rotate(90deg);*/
-    background-color: green;
+    transform: rotate(180deg);
+    /*color: red;*/
     /*font-size: 30px;*/
-    height: 200px;
+    /*height: 200px;*/
     /*width: 800px;*/
 }
 
 .skill_down_arrow{
-    color: #4D6197;
-    font-size: 40px;
+    width: 40px;
     position: relative;
     left: 150px;
-    top: 10px;
+    top: 15px;
+    transition: ease-in-out 0.3s;
     cursor: pointer;
 }
 
+#btn_skill_down_arrow2{
+    /*transform: rotate(180deg);*/
+    left: 230px;
+    /*top: 30px;*/
+}
 
 
 

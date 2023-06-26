@@ -2,10 +2,6 @@
     width: 100%;
     height: 400px;
     background-color: #273C75;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 #footer > div{
@@ -86,17 +82,28 @@
 }
 
 #footer_rights{
-    border: 2px solid aquamarine;
-    width: 10px;
-    height: 10px;
+    /*border: 2px solid aquamarine;*/
+    width: 300px;
+    height: 40px;
     position: relative;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -210px;
     margin: auto;
 }
 
-
+.footer_h4_rights{
+    width: fit-content;
+    height: fit-content;
+    font-size: 10px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 8px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
 
 
 
@@ -111,4 +118,29 @@
     #footer{
         height: 300px;
     }
+
+    #footer_rights{
+        /*border: 2px solid aquamarine;*/
+        width: 300px;
+        height: 40px;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: -120px;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

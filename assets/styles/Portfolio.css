@@ -93,7 +93,7 @@
 
 .github_btn{
     color: white;
-    background-color: #273C75;
+    background-color: var(--ligth-blue-colour);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     border-radius: 8px;
@@ -104,6 +104,10 @@
     left: 470px;
     top: 120px;
     cursor: pointer;
+}
+
+.github_btn:hover{
+    background-color: var(--dark-blue-colour);
 }
 
 #portfolio_left_arrow_span{

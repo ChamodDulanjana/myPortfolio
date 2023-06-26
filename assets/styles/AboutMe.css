@@ -62,7 +62,7 @@
 #section_about_me > div > div:nth-child(2) > h2 {
     font-family: 'KoHo', sans-serif;
     font-size: 33px;
-    margin-left: 12px;
+    margin-left: 7px;
 
 }
 
@@ -72,7 +72,7 @@
     width: max-content;
     height: max-content;
     font-size: 19px;
-    margin: 10px;
+    margin: 8px;
 }
 
 .about_me_span {
@@ -199,11 +199,12 @@
 
     #section_about_me > div > div:nth-child(2) > h2 {
         font-size: 30px;
+        margin-left: 8px;
     }
 
     #section_about_me > div > div:nth-child(2) > p {
         font-size: 17px;
-        margin: 10px;
+        margin: 8px;
 
     }
 
@@ -243,8 +244,12 @@
 
         #section_about_me > div > div:nth-child(2) > p {
             font-size: 15px;
-            margin: 9px;
+            margin: 6px;
+        }
 
+        #section_about_me > div > div:nth-child(2) > h2 {
+            margin-left: 6px;
+            font-size: 28px;
         }
 
         #about_me_img{
@@ -268,11 +273,12 @@
 
         #section_about_me > div > div:nth-child(2) > p {
             font-size: 14px;
-            margin: 9px;
+            margin: 5px;
         }
 
         #section_about_me > div > div:nth-child(2) > h2 {
             font-size: 28px;
+            margin-left: 6px;
         }
 
         #download_cv {;

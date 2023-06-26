@@ -73,15 +73,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
 .contact_input{
     background-color: transparent;
     border: none;
@@ -103,7 +94,7 @@
 }
 
 #txt_project{
-    width: 450px;
+    width: 475px;
     height: 25px;
 }
 
@@ -175,8 +166,6 @@
     #contact_me_main_container > div:nth-child(1){
         width: 460px;
         height: 550px;
-        top: 0;
-        bottom: 0;
         right: -5vw;
 
     }
@@ -184,15 +173,61 @@
     #contact_me_main_container > div:nth-child(2){
         width: 460px;
         height: 550px;
-        top: 0;
-        bottom: 0;
         left: -5vw;
     }
 
     #contact_me_main_container > div:nth-child(2) > div{
-        /*border: 1px solid red;*/
         margin: 14px;
+    }
 
+    #txt_project{
+        width: 430px;
+    }
+
+    #message_area{
+        width: 430px;
+        height: 180px;
     }
 
 }
+
+    /*----------------------------------------------------------------------------------------------------------------*/
+
+
+    @media screen and (max-width: 990px) {
+
+        #contact_me_main_container > div:nth-child(1){
+            width: 350px;
+            height: 550px;
+            left: -10px;
+        }
+
+        #contact_me_main_container > div:nth-child(2){
+            width: 430px;
+            height: 550px;
+            left: -25px;
+        }
+
+        #txt_name{
+            width: 172px;
+        }
+
+        #email{
+            width: 172px;
+        }
+
+        #txt_project{
+            width: 386px;
+        }
+
+        #message_area{
+            width: 386px;
+        }
+
+
+
+
+
+
+
+    }

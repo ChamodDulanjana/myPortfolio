@@ -28,7 +28,11 @@ header > nav > ul {
 header > nav > ul > li {
     display: inline;
     margin: 15px;
+}
 
+.main_nav_link{
+    text-decoration: none;
+    color: black;
 }
 
 main {
@@ -208,6 +212,10 @@ main > div:nth-child(1) > p:nth-child(6) {
         width: 150px;
         height: 30px;
     }
+
+    .social_icons {
+        font-size: 28px;
+    }
 }
 
     /*----------------------------------------------------------------------------------------------------------------*/
@@ -232,26 +240,7 @@ main > div:nth-child(1) > p:nth-child(6) {
             font-size: 35px;
         }
 
-        /*     main > div:nth-child(1) > p:nth-child(3) {
-                font-size: 18px;
-            }
 
-            main > div:nth-child(1) > p:nth-child(4) {
-                font-size: 15px;
-            }
-
-            main > div:nth-child(1) > p:nth-child(5) {
-                font-size: 15px;
-            }
-
-            main > div:nth-child(1) > p:nth-child(6) {
-                font-size: 15px;
-            }
-
-            .icons {
-                width: 150px;
-                height: 30px;
-            }*/
     }
 
 

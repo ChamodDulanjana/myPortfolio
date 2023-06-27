@@ -1,7 +1,13 @@
 #section_my_services {
     width: 100%;
     height: 930px;
+    /*transition: ease-in-out 15s;*/
     /*background-color: bisque;*/
+    /*transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition-duration: 0.15s, 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+    transition-property: color, background-color, border-color;*/
 }
 
 #my_services_main_container {
@@ -46,6 +52,7 @@
     top: 260px;
     cursor: pointer;
 }
+
 
 #my_services_main_container > div > p:hover{
     color: #273C75;

@@ -43,18 +43,18 @@
     <nav class="nav_container">
 
         <ul class="nav_list grid">
-            <li id="#home">Home</li>
-            <li id="#about">About</li>
-            <li id="#services">Services</li>
-            <li id="#skills">Skills</li>
-            <li id="#education">Education</li>
-            <li id="#portfolio">Portfolio</li>
-            <li id="#contact">Contact</li>
+            <li id="#home"><a href="#section_main" class="main_nav_link">Home</a></li>
+            <li id="#about"><a href="#section_about_me" class="main_nav_link">About</a></li>
+            <li id="#services"><a href="#section_my_services" class="main_nav_link">Services</a></li>
+            <li id="#skills"><a href="#section_skills" class="main_nav_link">Skills</a></li>
+            <li id="#education"><a href="#section_education" class="main_nav_link">Education</a></li>
+            <li id="#portfolio"><a href="#section_portfolio" class="main_nav_link">Portfolio</a></li>
+            <li id="#contact"><a href="#section_contact_me" class="main_nav_link">Contact</a></li>
         </ul>
 
     </nav>
 </header>
-<main>
+<main id="section_main">
     <div>
         <p>Hello,I’m</p>
         <p>Chamod Dulanjana</p>
@@ -204,30 +204,39 @@
     <h2 class="section_topic_2">My technical level</h2>
 
     <div id="skills_main_container">
-        <div id="div-1">
+
+        <div id="skills_div-1">
             <img src="assets/logo/brackets-curly.svg" alt="Frontend Developer">
             <h2>Frontend Developer </h2>
-            <span class="skill_down_arrow_span">
-                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow1">
-<!--                <i class="uil uil-angle-down " id="btn_skill_down_arrow1"></i>-->
-            </span>
+                <div id="skill_down_arrow_div1" class="skill_down_arrow_div">
+                    <i class="uil uil-angle-down btn_skill_down_arrow_class" id="btn_skill_down_arrow1"></i>
+                </div>
             <h3>More than 1 year</h3>
 
+            <section id="skills_image_id1" class="skills_images">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
         </div>
-        <div>
+
+        <div id="skills_div-2">
             <img src="assets/logo/icons8-designer.png" alt="Designer">
             <h2>Designer</h2>
-            <span class="skill_down_arrow_span">
-                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow2">
-            </span>
+            <div id="skill_down_arrow_div2" class="skill_down_arrow_div">
+                <i class="uil uil-angle-down btn_skill_down_arrow_class " id="btn_skill_down_arrow2"></i>
+            </div>
             <h3>More than 1 year</h3>
         </div>
-        <div>
+
+        <div id="skills_div-3">
             <img src="assets/logo/server-connection.svg" alt="Backend Developer">
             <h2>Backend Developer</h2>
-            <span class="skill_down_arrow_span">
-                <img src="assets/logo/angle-down.svg" alt="down arrow" class="skill_down_arrow" id="btn_skill_down_arrow3">
-            </span>
+            <div id="skill_down_arrow_div3" class="skill_down_arrow_div">
+                <i class="uil uil-angle-down btn_skill_down_arrow_class " id="btn_skill_down_arrow3"></i>
+            </div>
             <h3>More than 1 year</h3>
         </div>
 
@@ -413,10 +422,10 @@
 <footer id="footer">
     <div>
         <div><h1 id="footer_h1">Chamod</h1></div>
-        <div><h4 class="footer_h4">About</h4></div>
-        <div><h4 class="footer_h4">Services</h4></div>
-        <div><h4 class="footer_h4">Skills</h4></div>
-        <div><h4 class="footer_h4">Portfolio</h4></div>
+        <div><a href="#section_about_me" class="nav_link"><h4 class="footer_h4">About</h4></a></div>
+        <div><a href="#section_my_services" class="nav_link"><h4 class="footer_h4">Services</h4></a></div>
+        <div><a href="#section_skills" class="nav_link"><h4 class="footer_h4">Skills</h4></a></div>
+        <div><a href="#section_portfolio" class="nav_link"><h4 class="footer_h4">Portfolio</h4></a></div>
         <div>
             <a href="https://github.com/ChamodDulanjana" class="footer_social_icons">
                 <i class="uil uil-github-alt" id="footer_github"></i>

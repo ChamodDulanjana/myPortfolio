@@ -6,6 +6,34 @@
     --ligth-gray-color : #7f8c8d;
 }
 
+#logo{
+    width: 150px;
+    color: var(--dark-blue-colour);
+    font-family: 'Inder', sans-serif;
+    position: absolute;
+    margin-left: 8vw;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#logo > h3{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    font-size: 15px;
+}
+
+#logo > h2{
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+#nav_menu_bar{
+    display: none;
+}
 
 header {
     position: relative;
@@ -168,6 +196,64 @@ main > div:nth-child(1) > p:nth-child(6) {
     transition: ease-in-out 0.3s;
 }
 
+.main_nav_link:hover{
+    color: var(--ligth-blue-colour);
+}
+
+.basic{
+    /*color: green;*/
+    /*background-color: #ff253a;*/
+    /*display: block;*/
+    /*z-index: 100;*/
+    /*transform: translateY(300);*/
+    transition: ease-in-out 0.3s;
+    left: 30px;
+    background-color: #ff253a;
+}
+
+#side_nav_bar{
+    width: 300px;
+    height: 710px;
+    background-color: #868B8D;
+    position: absolute;
+    left: -200px;
+    z-index: 30;
+    /*display: none;*/
+
+}
+
+#mySidenav {
+    width: 300px;
+    height: 570px;
+    position: fixed;
+    z-index: 10;
+    top: 80px;
+    left: -300px;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#mySidenav a {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 8px 8px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    top: 60px;
+    /*left: 50px;*/
+
+}
+
+#mySidenav a:hover {
+    color: var(--ligth-blue-colour);
+}
+
 
 
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
@@ -216,6 +302,7 @@ main > div:nth-child(1) > p:nth-child(6) {
     .social_icons {
         font-size: 28px;
     }
+
 }
 
     /*----------------------------------------------------------------------------------------------------------------*/
@@ -225,7 +312,7 @@ main > div:nth-child(1) > p:nth-child(6) {
         #main_img {
             width: 300px;
             top: -20px;
-            left: 35px;
+            left: 45px;
         }
 
         main > div:nth-child(1) {
@@ -239,6 +326,24 @@ main > div:nth-child(1) > p:nth-child(6) {
         main > div:nth-child(1) > p:nth-child(2) {
             font-size: 35px;
         }
+
+        header > nav > ul {
+            display: none;
+        }
+
+        #nav_menu_bar{
+            display: inline;
+            font-size: 30px;
+            position: absolute;
+            right: 50px;
+            top: 25px;
+            cursor: pointer;
+        }
+
+        #nav_menu_bar:hover{
+            color: var(--ligth-blue-colour);
+        }
+
 
 
     }

@@ -41,9 +41,15 @@
 <body>
 <header>
     <nav class="nav_container">
+        <a href="#section_main">
+            <div id="logo">
+                <h3>Chamod</h3>
+                <h2>Dulanjana</h2>
+            </div>
+        </a>
 
         <ul class="nav_list grid">
-            <li id="#home"><a href="#section_main" class="main_nav_link">Home</a></li>
+            <li id="#home"><a href="#section_main" class="main_nav_link" id="home_link">Home</a></li>
             <li id="#about"><a href="#section_about_me" class="main_nav_link">About</a></li>
             <li id="#services"><a href="#section_my_services" class="main_nav_link">Services</a></li>
             <li id="#skills"><a href="#section_skills" class="main_nav_link">Skills</a></li>
@@ -52,6 +58,17 @@
             <li id="#contact"><a href="#section_contact_me" class="main_nav_link">Contact</a></li>
         </ul>
 
+        <span id="nav_menu_bar" onclick="toggleNav()"><i class="uil uil-bars"></i></span>
+
+        <div id="mySidenav">
+            <a href="#section_main">Home</a>
+            <a href="#section_about_me">About</a>
+            <a href="#section_my_services">Services</a>
+            <a href="#section_skills">Skills</a>
+            <a href="#section_education">Education</a>
+            <a href="#section_portfolio">Portfolio</a>
+            <a href="#section_contact_me">Contact</a>
+        </div>
     </nav>
 </header>
 <main id="section_main">
@@ -229,6 +246,14 @@
                 <i class="uil uil-angle-down btn_skill_down_arrow_class " id="btn_skill_down_arrow2"></i>
             </div>
             <h3>More than 1 year</h3>
+
+            <section id="skills_image_id2" class="skills_images">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
         </div>
 
         <div id="skills_div-3">
@@ -238,6 +263,14 @@
                 <i class="uil uil-angle-down btn_skill_down_arrow_class " id="btn_skill_down_arrow3"></i>
             </div>
             <h3>More than 1 year</h3>
+
+            <section id="skills_image_id3" class="skills_images">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
         </div>
 
     </div>

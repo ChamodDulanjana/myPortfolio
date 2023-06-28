@@ -52,3 +52,18 @@ twitter.addEventListener('mouseover', function() {
 twitter.addEventListener('mouseout', function() {
     twitter.style.color = '#4D6197';
 });
+
+
+
+
+
+
+
+function toggleNav() {
+    var nav = document.getElementById("mySidenav");
+    if (nav.style.left === "0px") {
+        nav.style.left = "-300px";
+    } else {
+        nav.style.left = "0px";
+    }
+}

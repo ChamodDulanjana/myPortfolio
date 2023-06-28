@@ -100,6 +100,14 @@ arrow2.addEventListener('click', () => {
     }
 });
 
+arrow2.addEventListener('click', () => {
+    var div6 = document.getElementById("skills_image_id2");
+    if (div6.classList.toString() !== "arrow") {
+        div6.classList.add("arrow");
+    } else {
+        div6.classList.remove("arrow");
+    }
+});
 
 
 
@@ -125,6 +133,14 @@ arrow3.addEventListener('click', () => {
     }
 });
 
+arrow3.addEventListener('click', () => {
+    var div11 = document.getElementById("skills_image_id3");
+    if (div11.classList.toString() !== "arrow") {
+        div11.classList.add("arrow");
+    } else {
+        div11.classList.remove("arrow");
+    }
+});
 
 
 

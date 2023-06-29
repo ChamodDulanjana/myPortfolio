@@ -1,3 +1,10 @@
+:root{
+    --skills-icons-box-shadow : 0 1px 0 0 gray;
+    --icon-transition: ease-in-out 0.3s;
+    --skills-icon-transform: translateY(-8px);
+}
+
+
 #section_skills {
     width: 100%;
     height: 930px;
@@ -20,15 +27,6 @@
     position: relative;
     width: 500px;
     height: 110px;
-
-}
-
-#skills_main_container > div:nth-child(1) {
-    /*height: 200px;*/
-}
-
-#skills_main_container > div:nth-child(2) {
-
 }
 
 #skills_main_container > div:nth-child(3) {
@@ -40,8 +38,6 @@
     position: relative;
     left: 20px;
     top: 25px;
-    /*display: inline;*/
-
 }
 
 #skills_main_container > div > h2 {
@@ -53,7 +49,6 @@
     position: relative;
     left: 40px;
     top: 0;
-
 }
 
 #skills_main_container > div > h3 {
@@ -66,27 +61,6 @@
     position: relative;
     left: 92px;
     top: -28px;
-
-}
-
-.click{
-    /*transform: rotate(180deg);*/
-    /*color: red;*/
-    /*font-size: 30px;*/
-    /*height: 120px;*/
-    /*width: 800px;*/
-}
-
-.aside{
-    transform: translateY(30px);
-}
-
-.document{
-    transform: rotate(-180deg);
-}
-
-.class{
-    transform: rotate(-180deg);
 }
 
 .skill_down_arrow_div{
@@ -95,7 +69,7 @@
     height: 40px;
     left: 415px;
     top: -32px;
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
     /*background-color: #BEC9E2;*/
 }
 
@@ -103,15 +77,6 @@
     left: 400px;
 }
 
-
-/*.skill_down_arrow{
-    width: 40px;
-    position: relative;
-    left: 150px;
-    top: 15px;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
-}*/
 .btn_skill_down_arrow_class{
     position: relative;
     left: 0;
@@ -124,28 +89,6 @@
     cursor: pointer;
 }
 
-.address{
-
-}
-
-#btn_skill_down_arrow1{
-
-}
-
-#btn_skill_down_arrow2 {
-
-}
-
-
-
-
-
-
-
-
-
-
-
 .skills_images{
     width: 300px;
     height: 60px;
@@ -154,10 +97,6 @@
     margin-left: 90px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: none;
-}
-
-.arrow{
-    display: grid;
 }
 
 .skills_images > div{
@@ -170,38 +109,42 @@
 
 #skills_image_id1 > div:nth-child(1){
     background-image: url("/assets/img/icons8-html-5.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id1 > div:nth-child(1):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id1 > div:nth-child(2){
     background-image: url("/assets/img/icons8-css3.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id1 > div:nth-child(2):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id1 > div:nth-child(3){
     background-image: url("/assets/img/icons8-javascript.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id1 > div:nth-child(3):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id1 > div:nth-child(4){
     background-image: url("/assets/img/icons8-react-80.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id1 > div:nth-child(4):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 
@@ -213,38 +156,42 @@
 
 #skills_image_id2 > div:nth-child(1){
     background-image: url("/assets/img/icons8-figma.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id2 > div:nth-child(1):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id2 > div:nth-child(2){
     background-image: url("/assets/img/icons8-adobe-photoshop.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id2 > div:nth-child(2):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id2 > div:nth-child(3){
     background-image: url("/assets/img/icons8-adobe-indesign.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id2 > div:nth-child(3):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id2 > div:nth-child(4){
     /*background-image: url("/assets/img/icons8-adobe-indesign.png");*/
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id2 > div:nth-child(4):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 
@@ -256,38 +203,42 @@
 
 #skills_image_id3 > div:nth-child(1){
     background-image: url("/assets/img/icons8-java-144.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id3 > div:nth-child(1):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id3 > div:nth-child(2){
     background-image: url("/assets/img/icons8-mysql-144.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id3 > div:nth-child(2):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id3 > div:nth-child(3){
     background-image: url("/assets/img/icons8-spring-boot-144.png");
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id3 > div:nth-child(3):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 #skills_image_id3 > div:nth-child(4){
     /*background-image: url("/assets/img/icons8-adobe-indesign.png");*/
-    transition: ease-in-out 0.3s;
+    transition: var(--icon-transition);
 }
 
 #skills_image_id3 > div:nth-child(4):hover{
-    transform: translateY(-8px);
+    transform: var(--skills-icon-transform);
+    box-shadow: var(--skills-icons-box-shadow);
 }
 
 
@@ -355,7 +306,7 @@
     }
 
     #btn_skill_down_arrow2{
-        left: 0px;
+        left: 0;
     }
 
     .skills_images{

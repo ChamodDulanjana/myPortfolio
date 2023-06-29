@@ -40,6 +40,7 @@ header {
     width: 100%;
     height: 80px;
     box-shadow: 0 0 4px;
+
 }
 
 
@@ -200,27 +201,6 @@ main > div:nth-child(1) > p:nth-child(6) {
     color: var(--ligth-blue-colour);
 }
 
-.basic{
-    /*color: green;*/
-    /*background-color: #ff253a;*/
-    /*display: block;*/
-    /*z-index: 100;*/
-    /*transform: translateY(300);*/
-    transition: ease-in-out 0.3s;
-    left: 30px;
-    background-color: #ff253a;
-}
-
-#side_nav_bar{
-    width: 300px;
-    height: 710px;
-    background-color: #868B8D;
-    position: absolute;
-    left: -200px;
-    z-index: 30;
-    /*display: none;*/
-
-}
 
 #mySidenav {
     width: 300px;
@@ -229,31 +209,36 @@ main > div:nth-child(1) > p:nth-child(6) {
     z-index: 10;
     top: 80px;
     left: -300px;
-    background-color: #f1f1f1;
+    background-color: var(--ligth-blue-colour);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #mySidenav a {
     font-family: 'Poppins', sans-serif;
-    padding: 8px 8px 8px 0;
+    padding: 20px 8px 20px 50px;
     text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    color: #818181;
+    /*text-align: left;*/
+    font-size: 18px;
+    color: white;
     display: block;
     transition: 0.3s;
     position: relative;
-    top: 60px;
-    /*left: 50px;*/
-
+    top: 30px;
 }
 
 #mySidenav a:hover {
-    color: var(--ligth-blue-colour);
+    color: var(--extra-light-blue-colour);
+    font-size: 20px;
+
 }
 
+.side_nav_bar_icons{
+    padding-right: 20px;
+}
 
 
 /*--------------------------------------------------Media Query-------------------------------------------------------*/
@@ -303,6 +288,9 @@ main > div:nth-child(1) > p:nth-child(6) {
         font-size: 28px;
     }
 
+    #mySidenav{
+        display: none;
+    }
 }
 
     /*----------------------------------------------------------------------------------------------------------------*/
@@ -344,6 +332,9 @@ main > div:nth-child(1) > p:nth-child(6) {
             color: var(--ligth-blue-colour);
         }
 
+        #mySidenav{
+            display: block;
+        }
 
 
     }

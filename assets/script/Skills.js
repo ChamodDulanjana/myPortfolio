@@ -1,152 +1,52 @@
 
-/*var img = document.getElementById("btn_skill_down_arrow1");
-img.addEventListener('click', () => {
-    var i = document.getElementById("btn_skill_down_arrow1");
-    if (i.classList.toString() !== "click") {
-        i.classList.add("click");
+
+
+
+
+function toggleArrowOne() {
+    var arrow1 = document.getElementById("skill_down_arrow_div1");
+    var imageDiv1 = document.getElementById("skills_image_id1");
+    var div3 = document.getElementById("skills_div-3");
+    if (arrow1.style.transform === "rotate(0deg)") {
+        arrow1.style.transform = "rotate(-180deg)";
+        imageDiv1.style.display = "grid";
+        div3.style.transform = "translateY(30px)";
     } else {
-        i.classList.remove("click");
+        arrow1.style.transform = "rotate(0deg)";
+        imageDiv1.style.display = "none";
+        div3.style.transform = "translateY(-30px)";
     }
-
-});*/
-
-/*
-var downArrow = document.getElementById('btn_skill_down_arrow1');
-
-downArrow.addEventListener('mouseover', function() {
-    downArrow.style.color = '#273C75';
-    downArrow.style.transform = rotate(90deg);
-
-});
-
-downArrow.addEventListener('mouseout', function() {
-    downArrow.style.color = '#4D6197';
-});
-*/
-
-
-
-/*var box = document.getElementById('btn_skill_down_arrow1');
-
-box.addEventListener('click', function() {
-    box.style.transform = 'rotate(-180deg)';
-});*/
-
-/*
-var element = document.querySelector('.uil-angle-right-b');
-element.addEventListener('mouseover', function() {
-    // Code to execute when the mouse pointer enters the element
-    element.style.backgroundColor = '#ff0000'; // Change the background color on hover
-});
-element.addEventListener('mouseout', function() {
-    // Code to execute when the mouse pointer leaves the element
-    element.style.backgroundColor = '#eaeaea'; // Change the background color back to the original
-});*/
+}
 
 
 
 
-var arrow1 = document.getElementById("btn_skill_down_arrow1");
-
-arrow1.addEventListener('click', () => {
-    var div = document.getElementById("skills_div-1");
-    if (div.classList.toString() !== "click") {
-        div.classList.add("click");
+function toggleArrowTwo() {
+    var arrow2 = document.getElementById("skill_down_arrow_div2");
+    var imageDiv2 = document.getElementById("skills_image_id2");
+    if (arrow2.style.transform === "rotate(0deg)") {
+        arrow2.style.transform = "rotate(-180deg)";
+        imageDiv2.style.display = "grid";
     } else {
-        div.classList.remove("click");
+        arrow2.style.transform = "rotate(0deg)";
+        imageDiv2.style.display = "none";
     }
-});
+}
 
-arrow1.addEventListener('click', () => {
-    var div3 = document.getElementById("skill_down_arrow_div1");
-    if (div3.classList.toString() !== "document") {
-        div3.classList.add("document");
+
+
+
+function toggleArrowThree() {
+    var arrow3 = document.getElementById("skill_down_arrow_div3");
+    var imageDiv3 = document.getElementById("skills_image_id3");
+    if (arrow3.style.transform === "rotate(0deg)") {
+        arrow3.style.transform = "rotate(-180deg)";
+        imageDiv3.style.display = "grid";
     } else {
-        div3.classList.remove("document");
+        arrow3.style.transform = "rotate(0deg)";
+        imageDiv3.style.display = "none";
     }
-});
-
-arrow1.addEventListener('click', () => {
-    var div2 = document.getElementById("skills_div-3");
-    if (div2.classList.toString() !== "aside") {
-        div2.classList.add("aside");
-    } else {
-        div2.classList.remove("aside");
-    }
-});
-
-arrow1.addEventListener('click', () => {
-    var div4 = document.getElementById("skills_image_id1");
-    if (div4.classList.toString() !== "arrow") {
-        div4.classList.add("arrow");
-    } else {
-        div4.classList.remove("arrow");
-    }
-});
-
-
-/*----------------------------------------------------------------------------------------------------------------*/
-
-
-
-var arrow2 = document.getElementById("btn_skill_down_arrow2");
-
-arrow2.addEventListener('click', () => {
-    var div5 = document.getElementById("skill_down_arrow_div2");
-    if (div5.classList.toString() !== "document") {
-        div5.classList.add("document");
-    } else {
-        div5.classList.remove("document");
-    }
-});
-
-arrow2.addEventListener('click', () => {
-    var div6 = document.getElementById("skills_image_id2");
-    if (div6.classList.toString() !== "arrow") {
-        div6.classList.add("arrow");
-    } else {
-        div6.classList.remove("arrow");
-    }
-});
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------------------------------------------------------------------------------*/
-
-
-
-var arrow3 = document.getElementById("btn_skill_down_arrow3");
-
-arrow3.addEventListener('click', () => {
-    var div10 = document.getElementById("skill_down_arrow_div3");
-    if (div10.classList.toString() !== "document") {
-        div10.classList.add("document");
-    } else {
-        div10.classList.remove("document");
-    }
-});
-
-arrow3.addEventListener('click', () => {
-    var div11 = document.getElementById("skills_image_id3");
-    if (div11.classList.toString() !== "arrow") {
-        div11.classList.add("arrow");
-    } else {
-        div11.classList.remove("arrow");
-    }
-});
-
-
-
-
-
-
+}
 
 
 

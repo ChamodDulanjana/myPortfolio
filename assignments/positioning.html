@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+
+    <style>
+        body{
+            position: relative;
+            background-color: #273C75;
+        }
+
+        #main_section{
+            width: 70vw;
+            height: 200px;
+            /*border: 1px solid black;*/
+            position: relative;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main_section > a > div{
+            width: 150px;
+            height: 150px;
+            /*border: 1px solid red;*/
+            margin: 30px;
+            border-radius: 1rem;
+            background-color: #0984e3;
+            transition: ease-in-out 0.3s;
+            cursor: pointer;
+        }
+
+        #web_h1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 50px;
+            width: max-content;
+            height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-top: 80px;
+            z-index: 10000;
+            color: white;
+        }
+
+        #web_p{
+            font-family: 'Poppins', sans-serif;
+            width: max-content;
+            height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-top: 30px;
+            color: #dfe6e9;
+        }
+
+        #main_section > a > div:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 2px 10px 2px #636e72;
+        }
+
+        #main_section > a > div > h4 {
+            font-size: 15px;
+            width: max-content;
+            height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-top: 18px;
+            padding-bottom: 30px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #main_section > a > div > p {
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            width: max-content;
+            height: max-content;
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-top: 2px;
+            color: #EAB543;
+        }
+
+        #main_section > a{
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1 id="web_h1">Assignments of positioning</h1>
+<p id="web_p">Advanced and basic positioning using Html and Css</p>
+
+<section id="main_section">
+    <a href="assignment_3.html">
+        <div>
+            <h4>Assignment 03</h4>
+            <p>Positioning using</p>
+            <p>HTML and CSS</p>
+        </div>
+    </a>
+
+</section>
+
+</body>
+</html>

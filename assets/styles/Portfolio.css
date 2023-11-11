@@ -2,8 +2,6 @@
     width: 100%;
     height: 930px;
     position: relative;
-    /*background-color: bisque;*/
-    /*border: 2px solid black;*/
 }
 
 .slider_main_div{
@@ -17,6 +15,7 @@
     right: 0;
     margin: auto;
     overflow: hidden;
+    transition: ease-in-out 0.6s;
 }
 
 .slider_long_div{
@@ -144,7 +143,16 @@
     left: 0;
     right: 0;
     margin: auto;
+}
 
+#portfolio_left_arrow_span{
+    cursor: pointer;
+    transition: ease-in-out 0.6s;
+}
+
+#portfolio_right_arrow_span{
+    cursor: pointer;
+    transition: ease-in-out 0.6s;
 }
 
 
@@ -203,11 +211,13 @@
     #portfolio_left_arrow_span{
         font-size: 55px;
         left: -58px;
+        cursor: pointer;
     }
 
     #portfolio_right_arrow_span{
         font-size: 55px;
         right: -58px;
+        cursor: pointer;
     }
 
     .btn_arrow_div{
@@ -217,8 +227,187 @@
 
 }
 
+/*----------------------------------------------------------------------------------------------------------------*/
 
 
 @media screen and (max-width: 772px) {
 
+    #section_portfolio {
+        height: 700px;
+    }
+
+    .slider_main_div{
+        width: 400px;
+        height: 500px;
+        top: 150px;
+    }
+
+    .slider_long_div {
+        width: 1600px;
+        height: 500px;
+
+    }
+
+    .portfolio_slide_divs {
+        width: 400px;
+        height: 500px;
+    }
+
+    .portfolio_slides_picture{
+        width: 350px;
+        left: 20px;
+        top: -250px;
+        transition: ease-in-out 0.6s;
+    }
+
+    .section_portfolio_h2{
+        font-size: 21px;
+        left: 30px;
+        /*right: 0px;*/
+        top: 270px;
+        margin: 0;
+    }
+
+    .section_portfolio_p{
+        top: 285px;
+        left: 30px;
+        margin: 0;
+    }
+
+    .github_btn{
+        left: 30px;
+        top: 310px;
+    }
+
+    #portfolio_left_arrow_span{
+        left: 40px;
+    }
+
+    #portfolio_right_arrow_span{
+        right: 40px;
+    }
+
+
+
+
+
+
 }
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 675px) {
+
+    .slider_main_div{
+        width: 350px;
+        height: 500px;
+        left: -60px;
+    }
+
+    .slider_long_div {
+        width: 1400px;
+        height: 500px;
+
+    }
+
+    .portfolio_slide_divs {
+        width: 350px;
+        height: 500px;
+    }
+
+    .portfolio_slides_picture{
+        width: 300px;
+        left: 20px;
+        top: -250px;
+        transition: ease-in-out 0.6s;
+    }
+
+    #portfolio_left_arrow_span{
+        left: 65px;
+    }
+
+    #portfolio_right_arrow_span{
+        right: 115px;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 600px) {
+
+    .slider_main_div{
+        width: 350px;
+        height: 500px;
+        left: -150px;
+    }
+
+    .slider_long_div {
+        width: 1400px;
+        height: 500px;
+
+    }
+
+    .portfolio_slide_divs {
+        width: 350px;
+        height: 500px;
+    }
+
+    .portfolio_slides_picture{
+        width: 300px;
+        left: 20px;
+        top: -250px;
+    }
+
+    #portfolio_left_arrow_span{
+        left: 25px;
+    }
+
+    #portfolio_right_arrow_span{
+        right: 175px;
+    }
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 530px) {
+
+    .slider_main_div{
+        width: 350px;
+        height: 500px;
+        left: -220px;
+    }
+
+    .slider_long_div {
+        width: 1400px;
+        height: 500px;
+
+    }
+
+    .portfolio_slide_divs {
+        width: 350px;
+        height: 500px;
+    }
+
+    .portfolio_slides_picture{
+        width: 300px;
+        left: 20px;
+        top: -250px;
+    }
+
+    #portfolio_left_arrow_span{
+        left: 0;
+    }
+
+    #portfolio_right_arrow_span{
+        right: 225px;
+    }
+
+}
+

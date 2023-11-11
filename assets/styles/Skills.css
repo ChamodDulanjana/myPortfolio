@@ -1,5 +1,5 @@
 :root{
-    --skills-icons-box-shadow : 0 1px 0 0 gray;
+    --skills-icons-box-shadow : 0 1px 2px 0 gray;
     --icon-transition: ease-in-out 0.3s;
     --skills-icon-transform: translateY(-8px);
 }
@@ -7,14 +7,11 @@
 
 #section_skills {
     width: 100%;
-    height: 930px;
-    /*background-color: azure;*/
-    /*border: 2px solid red;*/
+    height: 910px;
 }
 
 #skills_main_container {
-    /*border: 2px solid green;*/
-    height: calc(930px - 132px);
+    height: calc(910px - 132px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -23,7 +20,6 @@
 }
 
 #skills_main_container > div {
-    /*border: 1px solid black;*/
     position: relative;
     width: 500px;
     height: 110px;
@@ -70,7 +66,6 @@
     left: 415px;
     top: -32px;
     transition: var(--icon-transition);
-    /*background-color: #BEC9E2;*/
 }
 
 #skill_down_arrow_div2{
@@ -92,7 +87,6 @@
 .skills_images{
     width: 300px;
     height: 60px;
-    /*border: 1px solid red;*/
     position: relative;
     margin-left: 90px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -100,7 +94,6 @@
 }
 
 .skills_images > div{
-    /*border: 1px solid green;*/
     background-size: cover;
     background-position: center;
     width: 60px;
@@ -260,7 +253,6 @@
     }
 
     #skills_main_container > div{
-        /*border: 2px solid black;*/
         width: 350px;
         height: 95px;
     }
@@ -282,7 +274,6 @@
         position: relative;
         left: 20px;
         top: 20px;
-        /*display: inline;*/
     }
 
     #skills_main_container > div > h2{
@@ -320,3 +311,47 @@
         height: 50px;
     }
 }
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 772px) {
+
+    #section_skills {
+        height: 710px;
+    }
+
+    #skills_main_container {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:
+            "skills_div-3 skills_div-2"
+            "skills_div-2 skills_div-3";
+        height: 600px;
+    }
+
+    #skills_div-3{
+        margin-top: 50px;
+    }
+
+    #skills_main_container > div:nth-child(2) {
+        top: -60px;
+    }
+
+    #skills_main_container > div:nth-child(3) {
+        top: -140px;
+    }
+
+}
+
+
+
+
+
+
+
+
+

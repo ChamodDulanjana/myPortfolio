@@ -1,6 +1,7 @@
 #section_about_me {
     width: 100%;
     height: 930px;
+    /*border: 2px solid brown;*/
 }
 
 .section_topic_1 {
@@ -289,3 +290,59 @@
         }
 
     }
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 772px) {
+
+        #about_me_main_container{
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr ;
+            height: 900px;
+            grid-template-areas:
+            "about_me_dev_1 about_me_dev_2"
+            "about_me_dev_1 about_me_dev_1";
+            position: relative;
+        }
+
+        #section_about_me {
+            height: 1040px;
+        }
+
+        #about_me_dev_2{
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #about_me_main_container {
+            height: 900px;
+        }
+
+        #about_me_img {
+            width: 260px;
+        }
+
+        #about_me_experience_container{
+            left: 0;
+            right: 0;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        #download_cv{
+            margin-left: 115px;
+            margin-top: 50px;
+        }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,8 @@
 #section_contact_me {
     width: 100%;
     height: 930px;
-    /*background-color: aliceblue;*/
 }
 #contact_me_main_container{
-    /*border: 2px solid red;*/
     height: calc(930px - 132px);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -12,7 +10,6 @@
 }
 
 #contact_me_main_container > div{
-    /*border: 1px solid blueviolet;*/
 }
 
 #contact_me_main_container > div:nth-child(1){
@@ -28,9 +25,7 @@
 }
 
 #contact_me_main_container > div:nth-child(1) > div{
-    /*border: 1px solid red;*/
     margin: 20px;
-    /*border-radius: 10px;*/
 }
 
 #contact_me_main_container > div:nth-child(2){
@@ -44,6 +39,7 @@
     bottom: 0;
     left: -5vw;
     margin: auto;
+    transition: ease-in-out 0.3s;
 }
 
 #contact_me_main_container > div:nth-child(2) > div{
@@ -223,11 +219,71 @@
         #message_area{
             width: 386px;
         }
-
-
-
-
-
-
-
     }
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 772px) {
+
+        #section_contact_me {
+            height: 1200px;
+        }
+
+        #contact_me_main_container{
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr ;
+
+        }
+
+        #contact_me_main_container > div:nth-child(1){
+            width: 500px;
+            height: 400px;
+        }
+
+
+        #contact_me_main_container > div:nth-child(2){
+            width: 500px;
+            height: 650px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 545px) {
+
+        #contact_me_main_container > div:nth-child(2){
+            width: 410px;
+        }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 512px) {
+
+    #contact_me_main_container > div:nth-child(2){
+        width: 370px;
+        left: -35px;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 480px) {
+
+    #contact_me_main_container > div:nth-child(2){
+        left: -55px;
+    }
+}

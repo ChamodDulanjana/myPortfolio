@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/styles/MyServices.css">
     <link rel="stylesheet" href="assets/styles/Skills.css">
     <link rel="stylesheet" href="assets/styles/Education.css">
+    <link rel="stylesheet" href="assets/styles/Activities.css">
     <link rel="stylesheet" href="assets/styles/Portfolio.css">
     <link rel="stylesheet" href="assets/styles/ContactMe.css">
     <link rel="stylesheet" href="assets/styles/Footer.css">
@@ -33,6 +34,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rambla&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
 
 
     <title>Chamod Dulanjana Perera</title>
@@ -54,6 +56,7 @@
             <li id="#services"><a href="#section_my_services" class="main_nav_link">Services</a></li>
             <li id="#skills"><a href="#section_skills" class="main_nav_link">Skills</a></li>
             <li id="#education"><a href="#section_education" class="main_nav_link">Education</a></li>
+            <li id="#activities"><a href="#section_activities" class="main_nav_link">Activities</a></li>
             <li id="#portfolio"><a href="#section_portfolio" class="main_nav_link">Portfolio</a></li>
             <li id="#contact"><a href="#section_contact_me" class="main_nav_link">Contact</a></li>
         </ul>
@@ -66,19 +69,21 @@
             <a href="#section_my_services"><i class="uil uil-briefcase-alt side_nav_bar_icons"></i>Services</a>
             <a href="#section_skills"><i class="uil uil-file-alt side_nav_bar_icons"></i>Skills</a>
             <a href="#section_education"><i class="uil uil-books side_nav_bar_icons"></i>Education</a>
+            <a href="#section_activities"><i class="uil uil-books side_nav_bar_icons"></i>Activities</a>
             <a href="#section_portfolio"><i class="uil uil-scenery side_nav_bar_icons"></i>Portfolio</a>
             <a href="#section_contact_me"><i class="uil uil-navigator side_nav_bar_icons"></i>Contact</a>
         </div>
     </nav>
 </header>
 <main id="section_main">
-    <div>
-        <p>Hello,I’m</p>
-        <p>Chamod Dulanjana</p>
-        <p>A Full-Stack Developer</p>
-        <p>High level experience in software development</p>
-        <p>and web development knowledge,</p>
-        <p>producing quality work</p>
+
+    <div class="main_detail_container" id="div1">
+        <h2>Hello,I’m</h2>
+        <h1>Chamod Dulanjana</h1>
+        <h3>A Full-Stack Developer</h3>
+        <p>High level experience in software development <br>
+            and web development knowledge, <br>
+            producing quality work</p>
 
         <div class="icons">
             <div>
@@ -99,18 +104,22 @@
             </div>
         </div>
 
-        <button type="button" id="contact_me">Contact me</button>
+        <a href="mailto:chamodperera128@gmail.com">
+            <button type="button" id="contact_me">Contact me</button>
+        </a>
 
-        <span class="btn_mouse_scroll" id="btn_mouse_scroll_id">
+        <a href="#section_about_me" class="btn_mouse_scroll_link">
+            <span class="btn_mouse_scroll" id="btn_mouse_scroll_id">
                 <i class="uil uil-mouse-alt-2 mouse_scroll_icons"> </i>
                     scroll down
                 <i class="uil uil-arrow-down mouse_scroll_icons" id="scroll_down_arrow"></i>
         </span>
-    </div>
-    <div>
-        <img src="assets/img/main img.png" alt="Main Img" id="main_img">
+        </a>
     </div>
 
+    <div class="main_image_container" id="div2">
+        <img src="assets/img/main img.png" alt="Main Img" id="main_img">
+    </div>
 
 </main>
 
@@ -123,11 +132,11 @@
     <h2 class="section_topic_2">My introduction</h2>
 
     <div id="about_me_main_container">
-        <div>
+        <div id="about_me_dev_1">
             <img src="assets/img/about me.png" alt="about me" id="about_me_img">
         </div>
 
-        <div>
+        <div id="about_me_dev_2">
             <h2>I can design anything you want </h2>
             <p>I’m Chamod Dulanjana Perera, 20 years old and live in Colombo,</p>
             <p>Sri Lanka. As a student at the <span class="about_me_span">Institute of Software Engineering (IJSE)</span>,</p>
@@ -156,9 +165,11 @@
                 </div>
             </div>
 
-            <button type="button" id="download_cv">Download CV
-                <span id="download_span"><i class="uil uil-download-alt"></i></span>
-            </button>
+            <a href="assets/img/chamod's cv.pdf" download="chamod's cv.pdf">
+                <button type="button" id="download_cv">Download CV
+                    <span id="download_span"><i class="uil uil-download-alt"></i></span>
+                </button>
+            </a>
         </div>
 
     </div>
@@ -179,7 +190,7 @@
             <img src="assets/logo/web-development.svg" alt="web-development">
             <h2>Web</h2>
             <h2>Development</h2>
-                <span class="view_more_span" id="view_more_span_id1">View More
+                <span class="view_more_span" id="view_more_span_id1" onclick="webDevelopment()">View More
                     <i class="fa-solid fa-angle-right  view_more"  id="view_more_icon1"></i>
                 </span>
             </button>
@@ -189,7 +200,7 @@
             <img src="assets/logo/software development.png" alt="web-development">
             <h2>Software</h2>
             <h2>Development</h2>
-            <span class="view_more_span" id="view_more_span_id2">View More
+            <span class="view_more_span" id="view_more_span_id2" onclick="softwareDevelopment()">View More
                     <i class="fa-solid fa-angle-right  view_more" id="view_more_icon2"></i>
                 </span>
             </button>
@@ -199,12 +210,48 @@
             <img src="assets/logo/UiUx-design.svg" alt="web-development">
             <h2>UI/UX</h2>
             <h2>Design</h2>
-            <span class="view_more_span" id="view_more_span_id3">View More
+            <span class="view_more_span" id="view_more_span_id3" onclick="uxDevelopment()">View More
                     <i class="fa-solid fa-angle-right  view_more" id="view_more_icon3"></i>
                 </span>
             </button>
         </div>
     </div>
+
+    <section id="pop_up">
+        <div id="pop_up_ux" class="pop_up_container">
+            <img src="assets/logo/icons8-close-16.png" alt="close" class="close" id="close01" onclick="closePopUp3()">
+
+            <h2>UI/UX <br>Design</h2>
+            <span class="pop_up_class">I develop the user interface </span>
+            <span class="pop_up_class">Web page development </span>
+            <span class="pop_up_class">I create ux element interactions </span>
+            <span class="pop_up_class">I position your company brand </span>
+
+
+        </div>
+        <div id="pop_up_Software" class="pop_up_container">
+            <img src="assets/logo/icons8-close-16.png" alt="close" class="close" id="close02" onclick="closePopUp2()">
+
+            <h2>Software <br>Development</h2>
+            <span class="pop_up_class">I develop the user interface </span>
+            <span class="pop_up_class">Web page development </span>
+            <span class="pop_up_class">I create ux element interactions </span>
+            <span class="pop_up_class">I position your company brand </span>
+
+
+        </div>
+        <div id="pop_up_web" class="pop_up_container">
+            <img src="assets/logo/icons8-close-16.png" alt="close" class="close" id="close03" onclick="closePopUp1()">
+
+            <h2>Web <br>Development</h2>
+            <span class="pop_up_class">I develop the user interface </span>
+            <span class="pop_up_class">Web page development </span>
+            <span class="pop_up_class">I create ux element interactions </span>
+            <span class="pop_up_class">I position your company brand </span>
+
+
+        </div>
+    </section>
 
 </section>
 
@@ -251,7 +298,7 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div></div>
+<!--                <div></div>-->
             </section>
 
         </div>
@@ -268,7 +315,7 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div></div>
+<!--                <div></div>-->
             </section>
 
         </div>
@@ -317,6 +364,72 @@
 
 
 
+<!-- ###########################################  Section ACTIVITIES  #############################################  -->
+
+
+<section id="section_activities">
+    <h1 class="section_topic_1">Activities</h1>
+    <h2 class="section_topic_2">My Assignments</h2>
+
+    <div class="ass_main_div">
+        <a href="assignments/webs.html">
+            <div>
+            <span class="activity_span">
+                <i class="uis uis-window-grid class_activity_icons"  id="id_ass_card1"></i>
+            </span>
+                <h3 class="activity_h3">webs</h3>
+            </div>
+        </a>
+
+        <a href="assignments/animations.html">
+            <div>
+            <span class="activity_span">
+                <i class="uil uil-graph-bar class_activity_icons"  id="id_ass_card2"></i>
+            </span>
+                <h3 class="activity_h3">animations</h3>
+            </div>
+        </a>
+
+        <a href="assignments/positioning.html">
+            <div>
+            <span class="activity_span">
+                <i class="uil uil-atom class_activity_icons"  id="id_ass_card3"></i>
+            </span>
+                <h3 class="activity_h3">positioning</h3>
+            </div>
+        </a>
+
+        <a href="">
+            <div>
+            <span class="activity_span">
+                <i class="uil uil-grid class_activity_icons"  id="id_ass_card4"></i>
+            </span>
+                <h3 class="activity_h3">grid-layout</h3>
+            </div>
+        </a>
+
+        <a href="assignments/boostrap.html">
+            <div>
+            <span class="activity_span">
+                <i class="uil uil-bolt-alt class_activity_icons"  id="id_ass_card5"></i>
+            </span>
+                <h3 class="activity_h3">boostrap</h3>
+            </div>
+        </a>
+
+        <a href="">
+            <div>
+            <span class="activity_span">
+                <i class="uil uil-plus class_activity_icons activity_plus"  id="id_ass_card6"></i>
+            </span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+
 <!-- ###########################################  Section PORTFOLIO  ##############################################  -->
 
 
@@ -337,34 +450,42 @@
                         <h2 class="section_portfolio_h2">Stand-alone Application </h2>
                         <p class="section_portfolio_p">Medical Center management system</p>
                         <p class="section_portfolio_p">using Java Fx</p>
-                        <button type="button" id="open_via_github1" class="github_btn">Open via Github</button>
+                        <a href="https://github.com/ChamodDulanjana/HealthCare_Medical_Center.git">
+                            <button type="button" id="open_via_github1" class="github_btn">Open via Github</button>
+                        </a>
                     </div>
 
                     <div class="portfolio_slide_divs">
-                        <img src="assets/img/slide 02.png" alt="slide 01" class="portfolio_slides_picture">
+                        <img src="assets/img/slide 02.png" alt="slide 02" class="portfolio_slides_picture">
 
-                        <h2 class="section_portfolio_h2">Stand-alone Application </h2>
-                        <p class="section_portfolio_p">Medical Center management system</p>
+                        <h2 class="section_portfolio_h2">Stand-alone Application 02 </h2>
+                        <p class="section_portfolio_p">Hostel management system</p>
                         <p class="section_portfolio_p">using Java Fx</p>
-                        <button type="button" id="open_via_github2" class="github_btn">Open via Github</button>
+                        <a href="https://github.com/ChamodDulanjana/D24_Hostel.git">
+                            <button type="button" id="open_via_github2" class="github_btn">Open via Github</button>
+                        </a>
                     </div>
 
                     <div class="portfolio_slide_divs">
-                        <img src="assets/img/slide 01.png" alt="slide 01" class="portfolio_slides_picture">
+                        <img src="assets/img/Web POS System.png" alt="slide 03" class="portfolio_slides_picture">
 
-                        <h2 class="section_portfolio_h2">Stand-alone Application </h2>
+                        <h2 class="section_portfolio_h2">Web POS System </h2>
                         <p class="section_portfolio_p">Medical Center management system</p>
                         <p class="section_portfolio_p">using Java Fx</p>
-                        <button type="button" id="open_via_github3" class="github_btn">Open via Github</button>
+                        <a href="https://github.com/ChamodDulanjana/Web-POS-System-MVC-SPA.git">
+                            <button type="button" id="open_via_github3" class="github_btn">Open via Github</button>
+                        </a>
                     </div>
 
                     <div class="portfolio_slide_divs">
-                        <img src="assets/img/slide 01.png" alt="slide 01" class="portfolio_slides_picture">
+                        <img src="assets/img/assignment.jpg" alt="slide 04" class="portfolio_slides_picture">
 
-                        <h2 class="section_portfolio_h2">Stand-alone Application </h2>
+                        <h2 class="section_portfolio_h2">My Assignments </h2>
                         <p class="section_portfolio_p">Medical Center management system</p>
                         <p class="section_portfolio_p">using Java Fx</p>
-                        <button type="button" id="open_via_github4" class="github_btn">Open via Github</button>
+                        <a href="https://github.com/ChamodDulanjana?tab=repositories">
+                            <button type="button" id="open_via_github4" class="github_btn">Open via Github</button>
+                        </a>
                     </div>
 
                 </div>
@@ -438,11 +559,13 @@
                 <textarea id="message_area" rows="11" cols="64" placeholder="Message" class="contact_input"></textarea>
             </div>
 
-            <button type="button" id="send_message">Send Message
-                <span id="send_message_span">
+            <a href="mailto:chamodperera128@gmail.com">
+                <button type="submit" id="send_message">Send Message
+                    <span id="send_message_span">
                     <i class="uil uil-navigator"></i>
                 </span>
-            </button>
+                </button>
+            </a>
         </div>
     </div>
 </section>
@@ -454,7 +577,7 @@
 
 <footer id="footer">
     <div>
-        <div><h1 id="footer_h1">Chamod</h1></div>
+        <div><h1 class="footer_h1" id="footer_h1">Chamod</h1></div>
         <div><a href="#section_about_me" class="nav_link"><h4 class="footer_h4">About</h4></a></div>
         <div><a href="#section_my_services" class="nav_link"><h4 class="footer_h4">Services</h4></a></div>
         <div><a href="#section_skills" class="nav_link"><h4 class="footer_h4">Skills</h4></a></div>
@@ -475,7 +598,7 @@
                 <i class="uil uil-twitter-alt" id="footer_twitter"></i>
             </a>
         </div>
-        <div><h4 class="full_stack_developer">Full-Stack Developer</h4></div>
+        <div><h4 class="full_stack_developer" id="full_stack_developer">Full-Stack Developer</h4></div>
 
         <div>
             <a href="https://github.com/ChamodDulanjana" class="footer_social_icons2">
@@ -495,6 +618,35 @@
         </div>
         <div></div>
     </div>
+
+
+    <section id="footer_second_section_1">
+        <h1 class="footer_h1" id="res_footer_h1">Chamod</h1>
+        <h4 class="full_stack_developer" id="res_full_stack_developer">Full-Stack Developer</h4>
+        <a href="#section_about_me" class="nav_link"><h4 class="footer_h4" id="id_footer_h4_1">About</h4></a>
+        <a href="#section_my_services" class="nav_link"><h4 class="footer_h4" id="id_footer_h4_2">Services</h4></a>
+        <a href="#section_skills" class="nav_link"><h4 class="footer_h4" id="id_footer_h4_3">Skills</h4></a>
+        <a href="#section_portfolio" class="nav_link"><h4 class="footer_h4" id="id_footer_h4_4">Portfolio</h4></a>
+    </section>
+
+    <section id="footer_second_section_2">
+        <div>
+            <a href="https://github.com/ChamodDulanjana" class="footer_social_icons">
+                <i class="uil uil-github-alt" id="footer_github3"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/chamod-dulanjana-071883266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bwn97aLYHSPyWIrbxUXJU0A%3D%3D"
+               class="footer_social_icons">
+                <i class="fa-brands fa-linkedin-in" id="footer_linkedin3"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://twitter.com/128_Chamod"  class="footer_social_icons">
+                <i class="uil uil-twitter-alt" id="footer_twitter3"></i>
+            </a>
+        </div>
+    </section>
 
     <section id="footer_rights">
         <h4 class="footer_h4_rights">Copyright <span><i class="uil uil-copyright"></i></span> 2023-Chamod Dulanjana</h4>

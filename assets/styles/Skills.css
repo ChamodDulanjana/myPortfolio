@@ -101,7 +101,9 @@
 }
 
 #skills_image_id1 > div:nth-child(1){
-    background-image: url("/assets/img/icons8-html-5.png");
+    /*background-image: url("/assets/img/icons8-html-5.png");*/
+    background: url("../img/icons8-figma.png");
+    background-size: cover;
     transition: var(--icon-transition);
 }
 

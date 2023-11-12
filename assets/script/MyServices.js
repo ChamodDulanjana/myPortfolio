@@ -45,8 +45,11 @@ function webDevelopment(){
     var viewMore1 = document.getElementById("pop_up_web");
     if (viewMore1.style.display === "block") {
         viewMore1.style.display = 'none';
+        document.body.style.overflow = 'auto';
     } else {
         viewMore1.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+
     }
 }
 
@@ -55,8 +58,10 @@ function softwareDevelopment(){
     var viewMore2 = document.getElementById("pop_up_Software");
     if (viewMore2.style.display === "block") {
         viewMore2.style.display = 'none';
+        document.body.style.overflow = 'auto';
     } else {
         viewMore2.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -65,8 +70,10 @@ function uxDevelopment(){
     var viewMore3 = document.getElementById("pop_up_ux");
     if (viewMore3.style.display === "block") {
         viewMore3.style.display = 'none';
+        document.body.style.overflow = 'auto';
     } else {
         viewMore3.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 }
 
@@ -75,8 +82,11 @@ function closePopUp1(){
     var closePopUp1 = document.getElementById("pop_up_web");
     if (closePopUp1.style.display === "block") {
         closePopUp1.style.display = 'none';
+        document.body.style.overflow = 'auto';
+
     } else {
         closePopUp1.style.display = 'block';
+
     }
 }
 
@@ -84,6 +94,7 @@ function closePopUp2(){
     var closePopUp2 = document.getElementById("pop_up_Software");
     if (closePopUp2.style.display === "block") {
         closePopUp2.style.display = 'none';
+        document.body.style.overflow = 'auto';
     } else {
         closePopUp2.style.display = 'block';
     }
@@ -93,6 +104,7 @@ function closePopUp3(){
     var closePopUp3 = document.getElementById("pop_up_ux");
     if (closePopUp3.style.display === "block") {
         closePopUp3.style.display = 'none';
+        document.body.style.overflow = 'auto';
     } else {
         closePopUp3.style.display = 'block';
     }

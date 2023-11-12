@@ -6,6 +6,10 @@
     --ligth-gray-color : #7f8c8d;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #logo{
     width: 150px;
     color: var(--dark-blue-colour);

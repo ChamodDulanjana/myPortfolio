@@ -30,10 +30,6 @@
     animation-direction: alternate;
 }
 
-.slider_long_div:hover{
-    animation-delay: 15s;
-}
-
 @keyframes slides {
     0%, 20%{
         transform: translateX(-0%);

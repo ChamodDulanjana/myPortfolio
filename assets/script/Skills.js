@@ -11,13 +11,13 @@ function toggleArrowOne() {
     if (arrow1.style.transform === "rotate(-180deg)") {
         arrow1.style.transform = "rotate(0deg)";
         imageDiv1.style.display = "none";
-        div3.style.transform = "translateY(-10px)";
-        div02.style.display = "block";
+        /*div3.style.transform = "translateY(-10px)";*/
+        /*div02.style.display = "block";*/
     } else {
         arrow1.style.transform = "rotate(-180deg)";
         imageDiv1.style.display = "grid";
-        div3.style.transform = "translateY(100px)";
-        div02.style.display = "none";
+        /*div3.style.transform = "translateY(100px)";*/
+        /*div02.style.display = "none";*/
     }
 }
 
@@ -31,11 +31,11 @@ function toggleArrowTwo() {
     if (arrow2.style.transform === "rotate(-180deg)") {
         arrow2.style.transform = "rotate(0deg)";
         imageDiv2.style.display = "none";
-        div03.style.display = "block";
+        /*div03.style.display = "block";*/
     } else {
         arrow2.style.transform = "rotate(-180deg)";
         imageDiv2.style.display = "grid";
-        div03.style.display = "none";
+        /*div03.style.display = "none";*/
     }
 }
 

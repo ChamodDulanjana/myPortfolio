@@ -152,7 +152,7 @@
 
 @media screen and (max-width: 1540px) {
     #section_contact_me {
-        height: 750px;
+        height: 800px;
     }
 
     #contact_me_main_container{
@@ -228,7 +228,7 @@
 @media screen and (max-width: 772px) {
 
         #section_contact_me {
-            height: 1200px;
+            height: 1240px;
         }
 
         #contact_me_main_container{

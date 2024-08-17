@@ -30,6 +30,10 @@
     animation-direction: alternate;
 }
 
+.slider_long_div:hover{
+    animation-delay: 15s;
+}
+
 @keyframes slides {
     0%, 20%{
         transform: translateX(-0%);
@@ -51,6 +55,7 @@
     height: 300px;
     position: relative;
     /*border: 2px solid green;*/
+
 }
 
 .portfolio_slides_picture{
@@ -107,6 +112,7 @@
 
 .github_btn:hover{
     background-color: var(--dark-blue-colour);
+
 }
 
 #portfolio_left_arrow_span{

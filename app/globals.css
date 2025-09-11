@@ -1,2 +1,8 @@
 @import "tailwindcss";
 
+
+.borderBlack {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+}

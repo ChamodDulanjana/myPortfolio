@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Hero from "@/components/hero";
+import SectionDivider from "@/components/section-divider";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[34rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
       </div>
       <Hero />
+      <SectionDivider />
       <About />
     </main>
   );

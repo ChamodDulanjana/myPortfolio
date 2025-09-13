@@ -6,10 +6,13 @@ import SectionHeading from './section-heading'
 import { FaGithub } from "react-icons/fa";
 import { PiUsersBold } from "react-icons/pi";
 import { FaGitAlt } from "react-icons/fa";
+import { useSectionInView } from '@/hook/use-section-inview';
+import { section } from 'framer-motion/client';
 
 
 
 const About = () => {
+  const { ref } = useSectionInView("About");
 
   const [contributions, setContributions] = useState(0);
   const [followersCount, setFollowersCount] = useState(0);
@@ -34,11 +37,12 @@ const About = () => {
 
   return (
     <motion.section
-      className="mb-28 max-w-[48rem] text-center leading-8 sm:mb-40 px-4 scroll-mt-[100rem]"
+      id="about"
+      ref={ref}
+      className="pt-28 max-w-[48rem] text-center leading-8 sm:mb-40 px-4"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      id="about"
     >
       <SectionHeading>About me</SectionHeading>
 
@@ -61,7 +65,7 @@ const About = () => {
         learning how to play the guitar.
       </p>
 
-      <div className="mt-12 text-[16px] font-medium text-gray-800 flex flex-col sm:flex-row sm:justify-center gap-8 sm:gap-20">
+      <div className="mt-12 text-[16px] font-medium text-gray-800 flex flex-col items-center sm:flex-row sm:justify-center gap-8 sm:gap-20">
         <span className='flex items-center gap-2'>
           <FaGithub className='text-[18px]' />
           {contributions} Contributes
@@ -77,6 +81,13 @@ const About = () => {
 
       </div>
     </motion.section>
+    // <motion.section 
+    //   ref={ref} 
+    //   id='about'
+    //   className='mb-28 max-w-[48rem] text-center leading-8 sm:mb-40 px-4 min-h-screen bg-green-200'
+    // >
+
+    // </motion.section>
   )
 }
 

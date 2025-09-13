@@ -100,21 +100,23 @@ const Hero = () => {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-          href="https://www.linkedin.com/in/chamod-dulanjana-071883266"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <div className="flex items-center gap-8 sm:gap-4">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
+            href="https://www.linkedin.com/in/chamod-dulanjana-071883266"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
-          href="https://github.com/ChamodDulanjana"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+            href="https://github.com/ChamodDulanjana"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

@@ -11,6 +11,7 @@ import Header from "@/components/header";
 export const metadata: Metadata = {
   title: "Chamod Dulanjana",
   description: "Chamod Dulanjana's Portfolio",
+  keywords: ["portfolio", "web development", "Chamod Dulanjana"],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

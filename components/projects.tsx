@@ -7,7 +7,7 @@ import { projectsData } from '@/lib/data';
 import ProjectCard from './project-card';
 import { FaChevronRight, FaGithub } from "react-icons/fa";
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import StyledBtn from './styled-btn';
 
 const Projects = () => {
   const { ref } = useSectionInView("Projects", 0.25);
@@ -39,18 +39,7 @@ const Projects = () => {
 
           {/* View All Projects Button */}
           <Link href={'/all-projects'}>
-            <motion.button 
-              className="outline-none cursor-pointer py-3 px-6 text-[17px] rounded-full overflow-hidden bg-transparent text-white relative group border border-gray-300 shadow-md"
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.175 }}
-            >
-              <span className="relative z-10 transition-colors duration-400 group-hover:text-gray-900 font-semibold flex items-center gap-2 text-[16px]">
-                Show All
-                <FaChevronRight className='group-hover:translate-x-1 transition mt-1 text-lg' />
-              </span>
-              <div className="absolute top-0 -left-[10%] w-[120%] h-full bg-gray-900 skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></div>
-            </motion.button>
+            <StyledBtn text="Show All" Icon={FaChevronRight} />
           </Link>
         </div>
       </section>

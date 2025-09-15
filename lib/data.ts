@@ -3,6 +3,11 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import marnon_web from "@/public/marnon_web.png";
 import marnon_admin_panel from "@/public/marnon_admin_panel.png";
 import marnon_backend from "@/public/marnon_backend.jpg";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
+import { FaReact, FaNodeJs, FaGithub, FaJava, FaPython, FaDocker, FaAws, FaAngular } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiMysql, SiPostgresql, SiMongodb, SiRedux, SiGraphql, SiExpress, SiNestjs, SiDjango, SiFlask, SiJsonwebtokens } from "react-icons/si";
 
 export const links = [
   {
@@ -62,3 +67,31 @@ export const projectsData = [
     imageUrl: wordanalyticsImg,
   },
 ] as const;
+
+
+export const skillsData = [
+  { name: "JavaScript", icon: BiLogoJavascript },
+  { name: "TypeScript", icon: BiLogoTypescript },
+  { name: "React", icon: FaReact },
+  { name: "Next.js", icon: RiNextjsFill },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "Git", icon: FaGithub },
+  { name: "Tailwind CSS", icon: RiTailwindCssFill },
+  { name: "MySQL", icon: SiMysql },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "Redux", icon: SiRedux },
+  { name: "GraphQL", icon: SiGraphql },
+  { name: "Express", icon: SiExpress },
+  { name: "Nest.js", icon: SiNestjs },
+  { name: "Java", icon: FaJava },
+  { name: "Python", icon: FaPython },
+  { name: "Django", icon: SiDjango },
+  { name: "Flask", icon: SiFlask },
+  { name: "Docker", icon: FaDocker },
+  { name: "AWS", icon: FaAws },
+  { name: "Angular", icon: FaAngular },
+  { name: "Framer Motion", icon: TbBrandFramerMotion },
+  { name: "JWT", icon: SiJsonwebtokens },
+
+];

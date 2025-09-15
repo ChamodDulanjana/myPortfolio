@@ -30,7 +30,7 @@ const Projects = () => {
         <div className='flex items-center mt-12 sm:mt-16 gap-4 sm:gap-6'>
           {/* GitHub Link */}
           <a
-            className="bg-transparent py-4 px-6 text-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full  hover:bg-gray-100 cursor-pointer border-2 border-gray-900"
+            className="bg-transparent py-4 px-6 text-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full  hover:bg-gray-100 cursor-pointer border border-gray-300 shadow-md"
             href="https://github.com/ChamodDulanjana"
             target="_blank"
           >
@@ -40,7 +40,7 @@ const Projects = () => {
           {/* View All Projects Button */}
           <Link href={'/all-projects'}>
             <motion.button 
-              className="outline-none cursor-pointer  py-3 px-6 text-[17px] rounded-full overflow-hidden bg-transparent text-white relative group border-2 border-gray-900"
+              className="outline-none cursor-pointer py-3 px-6 text-[17px] rounded-full overflow-hidden bg-transparent text-white relative group border border-gray-300 shadow-md"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.175 }}

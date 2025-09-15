@@ -10,6 +10,8 @@ import { HiDownload } from 'react-icons/hi';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/hook/use-section-inview';
 import SocialBtn from './social-btn';
+import StyledBtn from './styled-btn';
+import DownloadBtn from './download-btn';
 
 const Hero = () => {
   const { ref } = useSectionInView("Home", 0.5);
@@ -72,6 +74,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
+        {/* Contact Me Button */}
         <Link
           href="#contact"
           onClick={() => {
@@ -79,25 +82,12 @@ const Hero = () => {
             setTimeOfLastClick(Date.now());
           }}
         >
-          <button className="outline-none cursor-pointer py-4 px-6 rounded-full overflow-hidden bg-white text-white relative group border border-gray-300 shadow-md">
-            <span className="relative z-10 transition-colors duration-400 group-hover:text-gray-900 font-semibold flex items-center gap-2">
-              Contact me
-              <FaChevronRight className='group-hover:translate-x-1 transition mt-1 text-lg' />
-            </span>
-            <div className="absolute top-0 -left-[10%] w-[120%] h-full bg-gray-900 skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></div>
-          </button>
+          <StyledBtn text="Contact me" Icon={FaChevronRight} />
         </Link>
 
-            
+        {/* Download CV Button */}
         <a href="/Chamod's Resume.pdf" download={true}>
-          <button className="outline-none cursor-pointer py-4 px-6 rounded-full overflow-hidden bg-gray-900 text-gray-900 relative group border border-gray-400 shadow-md">
-            <span className="relative z-10 transition-colors duration-400 group-hover:text-white font-semibold flex items-center gap-2">
-              Download CV
-              <HiDownload className=" group-hover:translate-y-1 transition group-hover:text-white" />
-            </span>
-            <div className="absolute top-0 -left-[10%] w-[120%] h-full bg-white skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></div>
-          </button>
-          
+          <DownloadBtn text="Download CV" Icon={HiDownload} />
         </a>
 
         {/* Social Links */}

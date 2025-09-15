@@ -5,16 +5,15 @@ import Image from 'next/image';
 import myImg from '@/public/my_image.jpeg';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { FaGithubSquare } from 'react-icons/fa';
+import { FaChevronRight, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/hook/use-section-inview';
+import SocialBtn from './social-btn';
 
 const Hero = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  
   return (
     <section
       ref={ref}
@@ -26,11 +25,9 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            transition={{ type: "tween", duration: 0.2 }}
           >
+            {/* My Image */}
             <Image
               src={myImg}
               alt="Chamod Dulanjana"
@@ -42,22 +39,19 @@ const Hero = () => {
             />
           </motion.div>
 
+          {/* Waving Hand Emoji */}
           <motion.span
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
+            transition={{ type: "spring", stiffness: 125, delay: 0.1, duration: 0.7 }}
           >
             👋
           </motion.span>
         </div>
       </div>
 
+      {/* Intro Text */}
       <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
@@ -71,52 +65,47 @@ const Hero = () => {
         </span>
       </motion.h1>
 
+      {/* Buttons and Social Links */}
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-[16px] sm:text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <button className="outline-none cursor-pointer py-4 px-6 rounded-full overflow-hidden bg-white text-white relative group border border-gray-300 shadow-md">
+            <span className="relative z-10 transition-colors duration-400 group-hover:text-gray-900 font-semibold flex items-center gap-2">
+              Contact me
+              <FaChevronRight className='group-hover:translate-x-1 transition mt-1 text-lg' />
+            </span>
+            <div className="absolute top-0 -left-[10%] w-[120%] h-full bg-gray-900 skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></div>
+          </button>
         </Link>
 
-        <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
-          href="/Chamod's Resume.pdf"
-          download
-        >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+            
+        <a href="/Chamod's Resume.pdf" download={true}>
+          <button className="outline-none cursor-pointer py-4 px-6 rounded-full overflow-hidden bg-gray-900 text-gray-900 relative group border border-gray-400 shadow-md">
+            <span className="relative z-10 transition-colors duration-400 group-hover:text-white font-semibold flex items-center gap-2">
+              Download CV
+              <HiDownload className=" group-hover:translate-y-1 transition group-hover:text-white" />
+            </span>
+            <div className="absolute top-0 -left-[10%] w-[120%] h-full bg-white skew-x-[30deg] transition-transform duration-400 ease-[cubic-bezier(0.3,1,0.8,1)] group-hover:translate-x-full z-0"></div>
+          </button>
+          
         </a>
 
+        {/* Social Links */}
         <div className="flex items-center gap-8 sm:gap-4">
-          <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
-            href="https://www.linkedin.com/in/chamod-dulanjana-071883266"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </a>
-
-          <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
-            href="https://github.com/ChamodDulanjana"
-            target="_blank"
-          >
-            <FaGithubSquare />
-          </a>
+          <SocialBtn Icon={FaLinkedin} href="https://www.linkedin.com/in/chamod-dulanjana-071883266" />
+          <SocialBtn Icon={FaGithubSquare} href="https://github.com/ChamodDulanjana" />
         </div>
+
       </motion.div>
     </section>
   );

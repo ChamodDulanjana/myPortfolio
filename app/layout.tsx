@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ConditionalHeader from "@/components/conditional-header";
+import ThemeContextProvider from "@/context/theme-context";
 
 // const inter = Inter({
 //   subsets: ["latin"],
@@ -18,10 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`bg-gray-50 text-gray-950 relative `} >
-        <ActiveSectionContextProvider>
-          <ConditionalHeader />
-          {children}
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <ConditionalHeader />
+            {children}
         </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { FaReact, FaNodeJs, FaGithub, FaJava, FaPython, FaDocker, FaAws, FaAngular } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiMysql, SiPostgresql, SiMongodb, SiRedux, SiGraphql, SiExpress, SiNestjs, SiDjango, SiFlask, SiJsonwebtokens } from "react-icons/si";
+import { SiMysql, SiPostgresql, SiMongodb, SiRedux, SiGraphql, SiExpress, SiNestjs, SiDjango, SiFlask, SiJsonwebtokens, SiSpring } from "react-icons/si";
 
 export const links = [
   {
@@ -85,6 +85,7 @@ export const skillsData = [
   { name: "Express", icon: SiExpress },
   { name: "Nest.js", icon: SiNestjs },
   { name: "Java", icon: FaJava },
+  { name: "Spring Boot", icon: SiSpring },
   { name: "Python", icon: FaPython },
   { name: "Django", icon: SiDjango },
   { name: "Flask", icon: SiFlask },

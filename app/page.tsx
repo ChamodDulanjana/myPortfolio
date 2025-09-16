@@ -3,6 +3,7 @@ import Hero from "@/components/hero";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import SectionDivider from "@/components/section-divider";
+import Experience from "@/components/experience";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Projects />
       <Skills />
+      <Experience />
     </main>
   );
 }

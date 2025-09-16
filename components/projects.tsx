@@ -16,7 +16,7 @@ const Projects = () => {
     <section id="projects" className='pt-28'>
       <section
         ref={ref}
-        className="max-w-[48rem] leading-7 sm:mb-10 px-4 flex flex-col items-center"
+        className="max-w-[48rem] leading-5 sm:mb-10 px-4 flex flex-col items-center"
       >
         <SectionHeading>My projects</SectionHeading>
 

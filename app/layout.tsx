@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`bg-gray-50 text-gray-950 relative dark:bg-gray-900 `} >
+      <body className={`bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`} >
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <ConditionalHeader />

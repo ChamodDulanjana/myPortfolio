@@ -65,7 +65,7 @@ const About = () => {
         learning how to play the guitar.
       </p>
 
-      <div className="mt-12 text-[16px] font-medium text-gray-800 flex flex-col items-center sm:flex-row sm:justify-center gap-8 sm:gap-20">
+      <div className="mt-12 text-[16px] font-medium text-gray-800 flex flex-col items-center sm:flex-row sm:justify-center gap-8 sm:gap-20 dark:text-gray-100">
         <span className='flex items-center gap-2'>
           <FaGithub className='text-[18px]' />
           {contributions} Contributes
@@ -81,13 +81,6 @@ const About = () => {
 
       </div>
     </motion.section>
-    // <motion.section 
-    //   ref={ref} 
-    //   id='about'
-    //   className='mb-28 max-w-[48rem] text-center leading-8 sm:mb-40 px-4 min-h-screen bg-green-200'
-    // >
-
-    // </motion.section>
   )
 }
 

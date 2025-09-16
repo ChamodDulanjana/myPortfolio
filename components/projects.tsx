@@ -8,6 +8,7 @@ import ProjectCard from './project-card';
 import { FaChevronRight, FaGithub } from "react-icons/fa";
 import Link from 'next/link';
 import StyledBtn from './styled-btn';
+import SocialBtn from './social-btn';
 
 const Projects = () => {
   const { ref } = useSectionInView("Projects", 0.25);
@@ -29,13 +30,9 @@ const Projects = () => {
 
         <div className='flex items-center mt-12 sm:mt-16 gap-4 sm:gap-6'>
           {/* GitHub Link */}
-          <a
-            className="bg-transparent py-4 px-6 text-gray-900 flex items-center gap-2 text-[1.35rem] rounded-full  hover:bg-gray-100 cursor-pointer border border-gray-300 shadow-md"
-            href="https://github.com/ChamodDulanjana"
-            target="_blank"
-          >
-            <FaGithub />
-          </a>
+          <div className='rounded-full shadow-md'>
+            <SocialBtn Icon={FaGithub} href="https://github.com/ChamodDulanjana" />
+          </div>
 
           {/* View All Projects Button */}
           <Link href={'/all-projects'}>

@@ -9,8 +9,8 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-gray-200 border-opacity-40 
-      shadow-md rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all cursor-pointer z-50"
+      className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border-1 border-gray-200 border-opacity-40 
+      shadow-md rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all cursor-pointer z-50 dark:bg-gray-950 dark:border-gray-200/50"
       onClick={toggleTheme}
     >
       {theme === "light" ? <BsMoon /> : <BsSun />}

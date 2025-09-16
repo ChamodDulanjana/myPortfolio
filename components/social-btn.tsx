@@ -14,7 +14,8 @@ const SocialBtn = ({ Icon, href }: SocialBtnProps) => {
   return (
     <a 
         className="relative w-14 h-14 overflow-hidden bg-white text-gray-600 rounded-full flex items-center justify-center 
-        hover:text-gray-900 border border-gray-300 hover:scale-110 transition hover:border-2 hover:border-black/25 shadow-sm"
+        hover:text-gray-900 border border-gray-300 hover:scale-110 transition hover:border-2 hover:border-black/25 shadow-sm 
+        dark:bg-white/10 dark:text-white/60 dark:hover:text-white dark:border-white/20 dark:hover:border-white/40 cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         href={href}

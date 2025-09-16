@@ -96,3 +96,18 @@ export const skillsData = [
   { name: "JWT", icon: SiJsonwebtokens },
 
 ];
+
+
+export const experienceData = [
+  {
+    role: "Full Stack Developer Intern",
+    company: "HCode Solutions Ltd.",
+    duration: "September 2024 - March 2025",
+    responsibilities: [
+      "Contributing to both frontend and backend development, ensuring smooth integration.",
+      "Collaborating with the team to meet project goals and follow best practices.",
+      "Troubleshooting and optimizing code, ensuring high quality and efficient performance.",
+      "Learning and adapting quickly, rapidly improving skills from a foundational level to an advanced understanding of the development process.",
+    ],
+  },
+] as const;

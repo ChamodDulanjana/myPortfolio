@@ -1,10 +1,10 @@
 'use client';
 
+import React from 'react'
 import { useSectionInView } from '@/hook/use-section-inview';
 import { motion } from 'framer-motion';
-import React from 'react'
-import SectionHeading from './section-heading';
-import SubmitBtn from './submit-btn';
+import SectionHeading from '@/components/section-heading';
+import SubmitBtn from '@/components/submit-btn';
 import { addToast } from "@heroui/toast";
 import { useTheme } from '@/context/theme-context';
 import { validateEmail } from '@/util/validation';

@@ -9,9 +9,9 @@ import { FaChevronRight, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { HiDownload } from 'react-icons/hi';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/hook/use-section-inview';
-import SocialBtn from './social-btn';
-import StyledBtn from './styled-btn';
-import DownloadBtn from './download-btn';
+import SocialBtn from '@/components/social-btn';
+import StyledBtn from '@/components/styled-btn';
+import DownloadBtn from '@/components/download-btn';
 
 const Hero = () => {
   const { ref } = useSectionInView("Home", 0.5);

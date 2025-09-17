@@ -1,10 +1,10 @@
-import About from "@/components/about";
-import Hero from "@/components/hero";
-import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import About from "@/section/about";
+import Hero from "@/section/hero";
+import Projects from "@/section/projects";
+import Skills from "@/section/skills";
 import SectionDivider from "@/components/section-divider";
-import Experience from "@/components/experience";
-import Contact from "@/components/contact";
+import Experience from "@/section/experience";
+import Contact from "@/section/contact";
 
 
 export default function Home() {

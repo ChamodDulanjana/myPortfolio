@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react'
-import SectionHeading from './section-heading';
+import SectionHeading from '@/components/section-heading';
 import { useSectionInView } from '@/hook/use-section-inview';
 import { projectsData } from '@/lib/data';
-import ProjectCard from './project-card';
+import ProjectCard from '@/components/project-card';
 import { FaChevronRight, FaGithub } from "react-icons/fa";
 import Link from 'next/link';
-import StyledBtn from './styled-btn';
-import SocialBtn from './social-btn';
+import StyledBtn from '@/components/styled-btn';
+import SocialBtn from '@/components/social-btn';
 
 const Projects = () => {
   const { ref } = useSectionInView("Projects", 0.25);

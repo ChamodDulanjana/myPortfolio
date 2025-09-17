@@ -2,13 +2,11 @@
 
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import SectionHeading from './section-heading'
+import SectionHeading from '@/components/section-heading';
 import { FaGithub } from "react-icons/fa";
 import { PiUsersBold } from "react-icons/pi";
 import { FaGitAlt } from "react-icons/fa";
 import { useSectionInView } from '@/hook/use-section-inview';
-import { section } from 'framer-motion/client';
-
 
 
 const About = () => {

@@ -5,12 +5,53 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import SectionHeading from './section-heading';
 import SubmitBtn from './submit-btn';
-import toast from "react-hot-toast";
+import { addToast } from "@heroui/toast";
 import { useTheme } from '@/context/theme-context';
+import { validateEmail } from '@/util/validation';
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
   const { theme } = useTheme();
+
+  // Form submission handler
+  const handleSubmit = async (formData: FormData) => {
+  const payload = {
+    name: formData.get("name")?.toString(),
+    senderEmail: formData.get("senderEmail")?.toString(),
+    subject: formData.get("subject")?.toString(),
+    message: formData.get("message")?.toString(),
+  };
+
+  // Validate email format
+  if (payload.senderEmail && !validateEmail(payload.senderEmail)) {
+    addToast({
+      title: "Invalid Email",
+      description: "Please enter a valid email address.",
+      color: "danger",
+    });
+    return;
+  }
+
+  await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  })
+  .then(() => {
+    addToast({
+      title: "Successful!",
+      description: "Email sent successfully!",
+      color: "success",
+    });
+  })
+  .catch((err) => {
+    addToast({
+      title: "Error",
+      description: err.message || "Failed to send email. Please try again.",
+      color: "danger",
+    });
+  });
+};
   
   return (
     <motion.section
@@ -32,20 +73,26 @@ const Contact = () => {
         or through this form.
       </p>
 
+      {/* Main form */}
       <form
         className="mt-10 flex flex-col dark:text-black gap-3"
-        action={async (formData) => {
-          // const { data, error } = await sendEmail(formData);
-
-          // if (error) {
-          //   toast.error(error);
-          //   return;
-          // }
-          //console.log("Form submitted", formData, formData.get("senderEmail"), formData.get("message"));
-
-          toast.success("Email sent successfully!");
-        }}
+        action={handleSubmit}
       >
+        <input
+          className="h-14 px-4 rounded-lg borderBlack text-black transition-all dark:outline-none shadow-sm"
+          name="name"
+          type="text"
+          required
+          minLength={3}
+          maxLength={50}
+          placeholder="Your name"
+          style={{
+            WebkitBoxShadow: theme === 'dark' 
+              ? '0 0 0 30px #95a5a6 inset' // gray
+              : '0 0 0 30px white inset',
+            WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
+          }}
+        />
         <input
           className="h-14 px-4 rounded-lg borderBlack text-black transition-all dark:outline-none shadow-sm"
           name="senderEmail"
@@ -58,6 +105,7 @@ const Contact = () => {
             WebkitBoxShadow: theme === 'dark' 
               ? '0 0 0 30px #95a5a6 inset' // gray
               : '0 0 0 30px white inset',
+            WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
           }}
         />
         <input
@@ -65,21 +113,29 @@ const Contact = () => {
           name="subject"
           type="text"
           required
-          minLength={5}
+          minLength={3}
           maxLength={50}
           placeholder="Your subject"
           style={{
             WebkitBoxShadow: theme === 'dark' 
               ? '0 0 0 30px #95a5a6 inset' // gray
               : '0 0 0 30px white inset',
+            WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
           }}
         />
         <textarea
-          className="h-52 rounded-lg borderBlack bg-white text-black dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-sm"
+          className="h-52 rounded-lg borderBlack bg-white text-black dark:text-[#2d3436] dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-sm"
           name="message"
           placeholder="Your message"
           required
-          rows={8}
+          minLength={5}
+          maxLength={1000}
+          style={{
+            WebkitBoxShadow: theme === 'dark' 
+              ? '0 0 0 30px #95a5a6 inset' // gray
+              : '0 0 0 30px white inset',
+            WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
+          }}
         />
         <div className="self-end-safe mt-2">
           <SubmitBtn />

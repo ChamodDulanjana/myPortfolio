@@ -1,6 +1,5 @@
 'use client';
 
-
 import React from 'react'
 import ConditionalHeader from '@/components/conditional-header';
 import ThemeSwitch from '@/components/theme-switch';
@@ -14,7 +13,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
         <ActiveSectionContextProvider>
             <HeroUIProvider>
                 <ConditionalHeader />
-                <ToastProvider />
+                <ToastProvider placement='top-right'/>
                 {children}
                 <ThemeSwitch />
             </HeroUIProvider>

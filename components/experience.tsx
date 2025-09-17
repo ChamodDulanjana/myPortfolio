@@ -3,6 +3,7 @@
 import React from 'react'
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/hook/use-section-inview';
+import CustomTimeline from './CustomTimeline';
 
 const Experience = () => {
   const { ref } = useSectionInView("Experience");
@@ -11,13 +12,11 @@ const Experience = () => {
     <section
       id="experience"
       ref={ref}
-      className="pt-28 max-w-[50rem] sm:mb-40 px-4"
+      className="pt-28 max-w-[60rem] sm:mb-10 px-4"
     >
       <SectionHeading>My experience</SectionHeading>
 
-      <div>
-        Experience works!
-      </div>
+      <CustomTimeline />
     </section>
   )
 }

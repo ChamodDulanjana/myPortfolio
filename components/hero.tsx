@@ -20,7 +20,7 @@ const Hero = () => {
     <section
       ref={ref}
       id="home"
-      className="pt-28 sm:pb-28 max-w-[50rem] text-center sm:mb-0"
+      className="pt-28 sm:pb-28 max-w-[50rem] text-center sm:mb-0 z-10"
     >
       <div className="flex items-center justify-center">
         <div className="relative">

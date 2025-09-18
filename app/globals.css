@@ -1,2 +1,16 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
+@plugin '../hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.borderBlack {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+}

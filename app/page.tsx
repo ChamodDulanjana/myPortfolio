@@ -1,13 +1,22 @@
-import Hero from "@/components/hero";
+import About from "@/section/about";
+import Hero from "@/section/hero";
+import Projects from "@/section/projects";
+import Skills from "@/section/skills";
+import SectionDivider from "@/components/section-divider";
+import Experience from "@/section/experience";
+import Contact from "@/section/contact";
 
 
 export default function Home() {
   return (
-    <main>
-      <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div>
-      <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
-
+    <main className="flex w-full h-full flex-col items-center mx-auto">
       <Hero />
+      <SectionDivider />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
 }

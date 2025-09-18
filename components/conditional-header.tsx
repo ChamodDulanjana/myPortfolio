@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react'
-import Header from './header'
+import Header from '@/section/header'
 import { usePathname } from 'next/navigation';
 
 const ConditionalHeader = () => {

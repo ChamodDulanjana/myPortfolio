@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { experienceData } from '@/lib/data';
-import { useTheme } from '@/context/theme-context';
+import { useTheme } from 'next-themes';
 
 
 const CustomTimeline = () => {

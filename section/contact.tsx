@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SectionHeading from '@/components/section-heading';
 import SubmitBtn from '@/components/submit-btn';
 import { addToast } from "@heroui/toast";
-import { useTheme } from '@/context/theme-context';
+import { useTheme } from 'next-themes';
 import { validateEmail } from '@/util/validation';
 
 const Contact = () => {

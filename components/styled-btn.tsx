@@ -9,7 +9,7 @@ type StyledBtnProps = {
 
 const StyledBtn = ({text, Icon}: StyledBtnProps) => {
   return (
-    <button className="outline-none cursor-pointer py-[15px] px-6 text-[17px] rounded-full overflow-hidden bg-white text-white relative group border border-gray-300 shadow-md dark:bg-black/10 dark:border-white/20">   
+    <button className="outline-none cursor-pointer py-[15px] px-[31px] text-[17px] rounded-full overflow-hidden bg-white text-white relative group border border-gray-300 shadow-md dark:bg-black/10 dark:border-white/20">   
         <span className="relative z-10 transition-colors duration-400 group-hover:text-gray-900 font-semibold flex items-center gap-2 text-[16px] dark:group-hover:text-white">
             {text}
             <Icon className='group-hover:translate-x-1 transition mt-1 text-lg' />

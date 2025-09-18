@@ -124,7 +124,7 @@ const Contact = () => {
           }}
         />
         <textarea
-          className="h-52 rounded-lg borderBlack bg-white text-black dark:text-[#2d3436] dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-sm"
+          className="h-52 rounded-lg borderBlack bg-white text-black dark:text-[#2d3436] dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-md"
           name="message"
           placeholder="Your message"
           required

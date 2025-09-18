@@ -8,6 +8,7 @@ import ThemeContextProvider from '@/context/theme-context';
 import { HeroUIProvider, ToastProvider } from '@heroui/react';
 import { ThemeProvider } from 'next-themes';
 import ClientWrapper from './api/client-wrapper';
+import ConditionalFooter from '@/components/conditional-footer';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -19,6 +20,7 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
                     <ToastProvider placement='top-right'/>
                     {children}
                     <ThemeSwitch />
+                    <ConditionalFooter />
                 </HeroUIProvider>
             </ClientWrapper>
         </ActiveSectionContextProvider>

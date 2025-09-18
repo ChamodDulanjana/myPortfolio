@@ -12,7 +12,7 @@ const Experience = () => {
     <section
       id="experience"
       ref={ref}
-      className="pt-28 max-w-[60rem] sm:mb-10 px-4"
+      className="pt-12 sm:pt-28 max-w-[60rem] mb-12 px-4"
     >
       <SectionHeading>My experience</SectionHeading>
 

@@ -9,7 +9,7 @@ const CustomTimeline = () => {
     const { theme } = useTheme();   
 
   return (
-    <div className="relative mt-20">
+    <div className="relative mt-10 sm:mt-20">
       {/* Vertical Line */}
       <div className="absolute left-5 md:left-7 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
       

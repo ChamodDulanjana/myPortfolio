@@ -6,9 +6,10 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerBody,
-  DrawerFooter,
-  Button,
 } from "@heroui/react";
+import { links } from '@/lib/data';
+import Link from 'next/link';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 type ResponsiveHeaderProps = {
   isOpen: boolean;
@@ -16,18 +17,42 @@ type ResponsiveHeaderProps = {
 }
 
 const ResponsiveNav = ({ isOpen, onClose }: ResponsiveHeaderProps) => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <div>
-      <Drawer isOpen={isOpen} onClose={onClose}>
+      <Drawer 
+        isOpen={isOpen} 
+        onClose={onClose} 
+        size='xs'
+        motionProps={{
+          variants: {
+            enter: { opacity: 1, x: 10 },
+            exit: { x: 100, opacity: 0 },
+          },
+        }}
+      >
         <DrawerContent>
-          <DrawerHeader>Responsive Header</DrawerHeader>
+          <DrawerHeader className='font-bold underline'>Menu</DrawerHeader>
           <DrawerBody>
-            <p>This is the body content of the drawer.</p>
+            <ul className='flex flex-col gap-4 font-medium text-gray-700/70 dark:text-gray-400'>
+              {links.map((link) => (
+                <li key={link.hash}>
+                  <Link 
+                    href={link.hash} 
+                    onClick={onClose}
+                    className={activeSection === link.name ? 'text-gray-800 dark:text-gray-50' : ''}
+                    onClickCapture={() => {
+                      setActiveSection(link.name);
+                      setTimeOfLastClick(Date.now());
+                    }}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </DrawerBody>
-          <DrawerFooter>
-            <Button onPress={onClose}>Close</Button>
-          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </div>

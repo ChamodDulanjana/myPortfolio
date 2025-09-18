@@ -6,19 +6,23 @@ import ThemeSwitch from '@/components/theme-switch';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import ThemeContextProvider from '@/context/theme-context';
 import { HeroUIProvider, ToastProvider } from '@heroui/react';
+import { ThemeProvider } from 'next-themes';
+import ClientWrapper from './api/client-wrapper';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeContextProvider>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <ActiveSectionContextProvider>
-            <HeroUIProvider>
-                <ConditionalHeader />
-                <ToastProvider placement='top-right'/>
-                {children}
-                <ThemeSwitch />
-            </HeroUIProvider>
+            <ClientWrapper>
+                <HeroUIProvider>
+                    <ConditionalHeader />
+                    <ToastProvider placement='top-right'/>
+                    {children}
+                    <ThemeSwitch />
+                </HeroUIProvider>
+            </ClientWrapper>
         </ActiveSectionContextProvider>
-    </ThemeContextProvider>
+      </ThemeProvider>
   )
 }
 

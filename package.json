@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/drawer": "^2.2.23",
     "@heroui/react": "^2.8.4",
     "@heroui/toast": "^2.0.16",
     "@react-email/components": "^0.5.3",

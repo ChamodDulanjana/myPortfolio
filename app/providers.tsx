@@ -11,7 +11,7 @@ import ClientWrapper from './api/client-wrapper';
 
 const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         <ActiveSectionContextProvider>
             <ClientWrapper>
                 <HeroUIProvider>

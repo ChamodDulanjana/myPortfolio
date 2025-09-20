@@ -14,7 +14,7 @@ const Projects = () => {
   const { ref } = useSectionInView("Projects", 0.25);
   
   return (
-    <section id="projects" className='pt-28'>
+    <section id="projects" className='pt-12 sm:pt-28 mb-12 sm:mb-0'>
       <section
         ref={ref}
         className="max-w-[48rem] leading-5 sm:mb-10 px-4 flex flex-col items-center"

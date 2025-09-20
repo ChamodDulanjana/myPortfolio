@@ -39,32 +39,76 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "MARNON WEB",
+    title: "Marnon E-commerce Web App",
     description:
       "A E-commerce web app for selling clothes online. User can perform product search, filtering, sorting, user authentication and payment integration.",
     tags: ["React", "Shad cn", "Hero UI", "Tailwind", "JWT", "Stripe"],
     imageUrl: marnon_web,
+    githubUrl: 'https://github.com/ChamodDulanjana/MARNON-FE',
+    liveUrl: '',
   },
   {
-    title: "MARNON ADMIN PANEL",
+    title: "Marnon Admin Panel",
     description:
       "Admin panel for managing the MARNON E-commerce platform. Admin can perform management tasks.",
     tags: ["React", "Shad cn", "Hero UI", "Tailwind", "JWT"],
     imageUrl: marnon_admin_panel,
+    githubUrl: 'https://github.com/ChamodDulanjana/MARNON-ADMIN-PANEL',
+    liveUrl: '',
   },
   {
-    title: "MARNON BACKEND",
+    title: "Marnon E-commerce Backend",
     description:
       "A backend service for the MARNON E-commerce platform. It handles user authentication, product management and order processing.",
     tags: ["Nest js", "MySQL", "JWT"],
     imageUrl: marnon_backend,
+    githubUrl: 'https://github.com/ChamodDulanjana/MARNON-BE',
+    liveUrl: '',
   },
   {
     title: "Term Deposit Prediction Model",
     description:
       "A machine learning model for predicting term deposit subscriptions. It uses historical data to identify potential customers.",
-    tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Machine Learning", "AWS"],
+    tags: ["Python", "Flask", "Pandas", "Scikit-learn", "AWS", "Machine Learning"],
     imageUrl: wordanalyticsImg,
+    githubUrl: 'https://github.com/ChamodDulanjana/Bank-Prediction-System',
+    liveUrl: '',
+  },
+  {
+    title: "Highway ticket management system",
+    description:
+      "A Spring Boot application with Microservices architecture for managing highway tickets. It includes user service, vehicle service, ticket generation and payment processing.",
+    tags: ["Java", "Spring Boot", "MySQL", "Microservices", "REST API"],
+    imageUrl: '',
+    githubUrl: 'https://github.com/ChamodDulanjana/Highway-Ticket-Management-System',
+    liveUrl: '',
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio website to showcase my projects, skills and experience. It is built with Next.js and Tailwind CSS.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "HeroUI", "TypeScript", "Resend"],
+    imageUrl: '',
+    githubUrl: 'https://github.com/ChamodDulanjana/Portfolio-Website',
+    liveUrl: '',
+  },
+  {
+    title: "Shoe Management System Frontend",
+    description:
+      "A frontend application for managing shoe inventory and sales. It includes features for product listing, user authentication, and shopping cart functionality.",
+    tags: ["HTML", "CSS", "JQuery", "Tailwind CSS"],
+    imageUrl: '',
+    githubUrl: 'https://github.com/ChamodDulanjana/Hello-Shoe-Management-System-Frontend',
+    liveUrl: '',
+  },
+  {
+    title: "Shoe Management System Backend",
+    description:
+      "A backend service for managing shoe inventory and sales. It includes features for user authentication, product management, and order processing.",
+    tags: ["Spring Boot", "JWT", "MySQL", "REST API"],
+    imageUrl: '',
+    githubUrl: 'https://github.com/ChamodDulanjana/Hello-Shoe-Management-System-Backend',
+    liveUrl: '',
   },
 ] as const;
 

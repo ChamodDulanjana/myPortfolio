@@ -37,7 +37,7 @@ const About = () => {
     <motion.section
       id="about"
       ref={ref}
-      className="pt-28 max-w-[48rem] text-center leading-8 sm:mb-10 px-4"
+      className="pt-12 sm:pt-28 max-w-[48rem] text-center leading-8 mb-12 px-4"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

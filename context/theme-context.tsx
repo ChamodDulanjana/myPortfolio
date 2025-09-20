@@ -57,3 +57,5 @@ export function useTheme() {
   }
   return context;
 }
+
+// I change themes by next-themes package. So this file is not in use now.

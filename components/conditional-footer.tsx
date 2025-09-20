@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react'
-import Header from '@/section/header'
 import { usePathname } from 'next/navigation';
+import Footer from '@/section/footer';
 
-const ConditionalHeader = () => {
+const ConditionalFooter = () => {
   const pathname = usePathname();
 
   // Pages where header should be hidden
@@ -14,7 +14,7 @@ const ConditionalHeader = () => {
     return null;
   }
   
-  return <Header />;
+  return <Footer />;
 }
 
-export default ConditionalHeader;
+export default ConditionalFooter;

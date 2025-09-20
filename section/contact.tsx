@@ -2,12 +2,31 @@
 
 import React from 'react'
 import { useSectionInView } from '@/hook/use-section-inview';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import SectionHeading from '@/components/section-heading';
 import SubmitBtn from '@/components/submit-btn';
 import { addToast } from "@heroui/toast";
-import { useTheme } from '@/context/theme-context';
+import { useTheme } from 'next-themes';
 import { validateEmail } from '@/util/validation';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15, // delay between inputs
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }, // easeOut cubic-bezier
+  },
+};
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
@@ -57,11 +76,10 @@ const Contact = () => {
     <motion.section
       id="contact"
       ref={ref}
-      className="pt-28 px-4 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      className="pt-12 sm:pt-28 px-4 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }} // `amount: 0.2` = trigger when 20% of section is visible
     >
       <SectionHeading>Contact me</SectionHeading>
 
@@ -74,11 +92,13 @@ const Contact = () => {
       </p>
 
       {/* Main form */}
-      <form
+      <motion.form
         className="mt-10 flex flex-col dark:text-black gap-3"
         action={handleSubmit}
+        variants={containerVariants} // 👈 wrap form so children stagger
       >
-        <input
+        <motion.input
+          variants={itemVariants}
           className="h-14 px-4 rounded-lg borderBlack text-black transition-all dark:outline-none shadow-sm"
           name="name"
           type="text"
@@ -93,7 +113,8 @@ const Contact = () => {
             WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
           }}
         />
-        <input
+        <motion.input
+          variants={itemVariants}
           className="h-14 px-4 rounded-lg borderBlack text-black transition-all dark:outline-none shadow-sm"
           name="senderEmail"
           type="email"
@@ -108,7 +129,8 @@ const Contact = () => {
             WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
           }}
         />
-        <input
+        <motion.input
+          variants={itemVariants}
           className="h-14 px-4 rounded-lg borderBlack text-black transition-all dark:outline-none shadow-sm"
           name="subject"
           type="text"
@@ -123,8 +145,9 @@ const Contact = () => {
             WebkitTextFillColor: theme === 'dark' ? '#2d3436' : '#636e72',
           }}
         />
-        <textarea
-          className="h-52 rounded-lg borderBlack bg-white text-black dark:text-[#2d3436] dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-sm"
+        <motion.textarea
+          variants={itemVariants}
+          className="h-52 rounded-lg borderBlack bg-white text-black dark:text-[#2d3436] dark:bg-[#95a5a6] p-4 transition-all dark:outline-none shadow-md"
           name="message"
           placeholder="Your message"
           required
@@ -140,7 +163,7 @@ const Contact = () => {
         <div className="self-end-safe mt-2">
           <SubmitBtn />
         </div>
-      </form>
+      </motion.form>
     </motion.section>
   )
 }

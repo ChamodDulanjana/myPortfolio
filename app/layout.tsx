@@ -9,9 +9,18 @@ import Providers from "./providers";
 // });
 
 export const metadata: Metadata = {
-  title: "Chamod Dulanjana",
-  description: "Chamod Dulanjana's Portfolio",
-  keywords: ["portfolio", "web development", "Chamod Dulanjana"],
+  title: "Chamod Dulanjana Perera | Portfolio",
+  description: "Official portfolio website of Chamod Dulanjana Perera, Software Engineer.",
+  keywords: ["Chamod Dulanjana Perera, Chamod Perera, CD Perera, Chamod Dulanjana, Software Developer, Software Engineer, Portfolio"],
+  authors: [{ name: "Chamod Dulanjana Perera", url: "https://cdperera.com" }],
+  creator: "Chamod Dulanjana Perera",
+  openGraph: {
+    title: "Chamod Dulanjana Perera | Portfolio",
+    description: "Portfolio showcasing projects, skills, and experience.",
+    url: "https://cdperera.com",
+    siteName: "Chamod Dulanjana Perera",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

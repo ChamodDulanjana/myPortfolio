@@ -68,7 +68,7 @@ export const projectsData = [
   {
     title: "Term Deposit Prediction Model",
     description:
-      "A machine learning model for predicting term deposit subscriptions. It uses historical data to identify potential customers.",
+      "A machine learning model for predicting term deposit subscriptions. It uses historical data to identify potential customers and host the model on AWS.",
     tags: ["Python", "Flask", "Pandas", "Scikit-learn", "AWS", "Machine Learning"],
     imageUrl: wordanalyticsImg,
     githubUrl: 'https://github.com/ChamodDulanjana/Bank-Prediction-System',
@@ -90,7 +90,7 @@ export const projectsData = [
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "HeroUI", "TypeScript", "Resend"],
     imageUrl: '',
     githubUrl: 'https://github.com/ChamodDulanjana/Portfolio-Website',
-    liveUrl: '',
+    liveUrl: 'https://cdperera.com',
   },
   {
     title: "Shoe Management System Frontend",

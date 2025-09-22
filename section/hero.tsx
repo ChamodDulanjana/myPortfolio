@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import myImg from '@/public/my_image.jpeg';
+import myImg from '@/public/my_image.png';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FaChevronRight, FaGithubSquare, FaLinkedin } from 'react-icons/fa';

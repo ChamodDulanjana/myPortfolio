@@ -86,7 +86,7 @@ const Hero = () => {
         </Link>
 
         {/* Download CV Button */}
-        <a href="/Chamod's Resume.pdf" download={true}>
+        <a href="/Chamod Dulanjana's Resume.pdf" download={true}>
           <DownloadBtn text="Download CV" Icon={HiDownload} />
         </a>
 
